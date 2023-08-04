@@ -1,0 +1,271 @@
+nav
+    position: fixed
+    z-index: 10
+    width: 100%
+    .menu
+        +over_md
+        position: absolute
+        z-index: 10
+        width: 100%
+        min-width: 374px
+        display: flex
+        justify-content: space-between
+        padding: 0 100px
+        // border: 1px solid #000
+        transition-duration: 0.3s
+        &:hover
+            background-color: rgba(190, 190, 190, 0.43)
+        +xl
+            padding: 0 80px
+            transition-duration: 0.3s
+        +lg
+            padding: 0 40px
+        
+
+        .logo
+            img
+                width: 200px
+                // border: 1px solid #000
+                +y-center
+                overflow: hidden
+                filter: brightness(0)
+                transition: filter 0.5s
+            &:hover
+                filter: brightness(100%)
+        
+                    
+        ul
+            display: flex
+            justify-content: flex-end
+            .about,.work,.contact
+                // border: 1px solid #000
+                width: 200px
+                height: 100px
+                display: flex
+                justify-content: center
+                align-items: center
+                transition-duration: 0.3s
+                a
+                    text-decoration: none
+                    p
+                        display: block
+                        color: black
+                        font-family: 'lineJP', sans-serif
+                        font-size: 25px
+                &:hover
+                    p
+                        text-transform: uppercase
+                        font-weight: 700
+                +xl
+                    width: 150px
+                    transition-duration: 0.3s
+                +lg
+                    width: 130px
+                
+            // .work
+            //     p
+            //         display: block
+            //         color: black
+            //         font-family: 'lineJP', sans-serif
+            //         font-size: 25px
+
+
+                // .work
+                //     p
+                //         display: block
+                //         // border: 1px solid #000
+                //         color: black
+                //         font-family: 'lineJP', sans-serif
+                //         font-size: 25px
+                //     &:hover
+                //         text-transform: uppercase
+                //         font-weight: 700
+            li.work
+                .sub-menu
+                    position: absolute
+                    top: 100%
+                    background-color: #333
+                    z-index: 4
+                    width: 200px
+                    display: none
+                    +xl
+                        width: 150px
+                    +lg
+                        width: 130px
+                &:hover
+                    .sub-menu
+                        display: flex
+                        flex-direction: column
+                        text-decoration: none
+                        
+                        justify-content: center
+                        align-items: center
+
+
+            .sub-menu
+                li
+                    width: 100%
+                    a   
+                        display: block
+                        text-align: center
+                        text-decoration: none
+                        font-size: 25px
+                        font-weight: 500
+                        padding: 20px 0
+                        color: white
+                        // border: 1px solid white
+                    &:hover
+                        text-transform: uppercase
+                
+
+                // &:hover
+                //     .sub-menu
+                //         // display: block
+                //         li
+                //             margin: 5px 0
+                //             a
+                //                 color: black
+                //                 text-decoration: none
+
+                    
+
+    .menu.under_md
+        
+        
+        height: 100px
+        
+        +under_md
+        // justify-content: center
+        // align-items: center
+        a.logo
+            // border: 1px solid #000
+            
+        .menu_icon
+            width:  60px
+            height: 60px
+            border: 1.8px solid #000
+            border-radius: 30px
+            align-self: center
+            position: relative
+            cursor: pointer
+            z-index: 5
+            transition-duration: 0.3s
+            .icon_up
+                width: 28px
+                height: 2px
+                background-color: black
+                position: absolute
+                // top: 20px
+                +x-center
+                top: 21px
+                transition-duration: 0.3s
+
+            .icon_down    
+                width: 28px
+                height: 2px
+                background-color: black
+                position: absolute
+                top: 35px
+                transition-duration: 0.3s
+                +x-center
+            // .menuText
+            //     position: absolute
+            //     +center
+            //     font-size: 18px
+            //     // display: none
+            //     color: rgba(255, 255, 255, 0)
+            // &:hover
+            //     .menuText
+            //         color: rgba(1, 1, 1, 1)
+            //         transition-duration: 0.2s
+            //     .icon_up, .icon_down
+            //         background-color: rgba(255, 255, 255, 0)
+            //         transition-duration: 0.2s
+            
+        .open
+            transform: translate(-30px,40px)
+            transition-duration: 0.3s
+            width: 80px
+            height: 80px
+            border-radius: 50%
+            .icon_up
+                transform: rotate(45deg)
+                left: 18px
+                top: 38px
+                transition-duration: 0.3s
+                width: 40px
+            .icon_down
+                transform: rotate(-45deg)  
+                top: 38px
+                left: 18px
+                transition-duration: 0.3s
+                width: 40px
+        
+        .menu_sp
+            width: 100vw
+            height: 100vh
+            background-color: #d6d6d6
+            position: absolute
+            left: 0
+            top: 0
+            overflow: hidden
+            // position: relative
+            transform: translateY(-100%)
+            transition-duration: 0.3s
+            ul
+                display: flex
+                flex-direction: column
+                font-family: 'lineEN', sans-serif
+                font-weight: 500
+                position: absolute
+                top: 150px
+                font-size: 100px
+                left: -8px
+                
+                li
+                    margin-bottom: 45px 
+                    a
+                        text-decoration: none
+                        color: black
+                li#about
+                    transform: translateX(-75%)
+                    transition-delay: 0.1s
+                li#work
+                    transform: translateX(-75%)
+                    transition-delay: 0.1s
+                li#contact
+                    transform: translateX(-100%)
+                    transition-delay: 0.1s
+            a.logo_sp
+                position: absolute
+                right: 80px
+                bottom: 80px
+                img
+                    width: 200px
+        .open_sp
+            transform: translateY(0%)
+            transition-duration: 0.5s
+            ul
+                li#about
+                    transform: translateX(0)
+                    transition-delay: 0.5s
+                    transition-duration: 0.5s
+                li#work
+                    transform: translateX(0)
+                    transition-delay: 0.6s
+                    transition-duration: 0.6s
+                
+                li#contact
+                    transform: translateX(0)
+                    transition-delay: 0.7s
+                    transition-duration: 0.7s
+
+
+
+#work_website
+    nav
+        .menu
+            background-color: #fff
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1), 0 1px 5px rgba(0,0,0,0.1)
+            &:hover
+                box-shadow: 0 1px 10px rgba(0,0,0,0.2), 0 1px 10px rgba(0,0,0,0.2)

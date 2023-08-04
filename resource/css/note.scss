@@ -1,0 +1,47 @@
+.btn14{
+    @include btn(15px, 400px);
+    
+    .icon-circle {
+      @include icon-circle(60px, 60px);
+      &:hover {
+        background: #fff;
+      }
+    }
+    
+    .icon {
+      @include icon(4px, 30px);
+      border-radius: 4px;
+      background: transparent;
+      
+      &:before{
+        @include icon-before(4px, 30px, -6px);
+        border-radius: 4px;
+      }
+      
+      &:after{
+        @include icon-after(4px, 30px, 6px);
+        border-radius: 4px;
+      }
+    }
+    
+    &.open {
+      .icon-circle {
+        background: #fff;
+      }
+      .icon {
+        transition-duration: 0.5s;
+        background: transparent;
+        
+        &:before{
+          transform: rotateZ(45deg) scaleX(1.25) translate(4px, 4px);
+        }
+  
+        &:after{
+          transform: rotateZ(-45deg) scaleX(1.25) translate(3px,-4px);
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }

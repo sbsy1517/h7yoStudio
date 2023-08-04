@@ -1,0 +1,114 @@
+// @import "scss/_functions.scss"
+// @import "scss/_variables.scss"
+// @import "scss/_mixins.scss"
+// @import "scss/bootstrap.scss"
+@import "resetCSS.sass"
+@import "font.sass"
+
+
+
+*
+    position: relative
+    
+html,body
+    width: 100%
+    
+
+@mixin center
+    // position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+@mixin y-center        
+    top: 50%
+    transform: translateY(-50%)
+
+@mixin x-center
+    left: 50%
+    transform: translateX(-50%)
+        
+
+
+// media
+@mixin xl
+    @media (max-width: 1366px)
+        @content
+@mixin xl-less
+    @media (max-width: 1200px)
+        @content
+@mixin lg
+    @media (max-width: 992px)
+        @content
+@mixin md
+    @media (max-width: 768px)
+        @content
+@mixin md-less
+    @media (max-width: 767px)
+        @content
+@mixin md-700
+    @media (max-width: 700px)
+        @content
+@mixin sm
+    @media (max-width: 576px)
+        @content
+@mixin xm
+    @media (max-width: 414px)
+        @content
+@mixin ip5
+    @media (max-width: 374px)
+        @content
+
+@mixin se
+    @media (max-width: 320px)
+        @content
+
+@mixin over_md
+    display: block
+    +md
+        display: none
+
+@mixin under_md
+    display: none
+    +md
+        display: flex
+
+@mixin over_sm
+    display: block
+    +sm
+        display: none
+
+@mixin under_sm
+    display: none
+    +sm
+        display: flex
+
+@mixin icon-circle($height, $width)
+    transition-duration: 0.5s
+    position: absolute
+    height: $height
+    width: $width
+    top: 2px
+    border-radius: 100%
+    background: transparent
+    border: 2px solid black
+    left: -15px
+
+@mixin btn($left, $top)
+    position: absolute
+    width: 60px
+    height: 60px
+    top: $top
+    left: $left
+    transition-duration: 0.5s
+
+
+.overmd
+    +over_md
+.undermd
+    +under_md
+
+.oversm
+    +over_sm
+.undersm
+    +under_sm

@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+    include components/meta.pug
+
+        link(rel="stylesheet", href="resource/css/index.css")
+        title h_7yo stud_o
+    body#index 
+
+        //- .info
+        //-     img(src="resource/img/logo/logo_home.png", alt="")
+        //-     .intro
+        //-         p webs_te gr_phic ph_to v_deo webs_te gr_phic ph_to v_deo webs_te gr_phic ph_to v_deo webs_te gr_phic ph_to v_deo
+
+        include components/nav.pug
+
+                
+        header 
+            .bg#bgCarousel.carousel.slide(data-bs-ride='carousel')
+                .carousel-inner
+                    .carousel-item.active
+                        .title
+                            p Hi! 
+                            //- h1 我是黃啟祐
+
+                        .bg_1#home_bg
+                        
+
+                    .carousel-item
+                        .title
+                            p Hi! 
+                            h1 我是一名
+                            p 網頁設計師
+                            p web designer
+                            a(href="work_website.html").button#web_designer 
+                                p 觀看作品
+                        .bg_2#home_bg
+                    .carousel-item
+                        .title
+                            p Hi! 
+                            h1 我是一名
+                            p 攝影師
+                            p photographer
+                            a(href="#").button
+                                p 觀看作品
+                        .bg_3#home_bg
+                    .carousel-item
+                        .title
+                            p Hi! 
+                            h1 我是一名
+                            p 平面設計師
+                            p graphic designer 
+                            a(href="#").button
+                                p 觀看作品
+                        .bg_4#home_bg
+                    .carousel-item
+                        .title
+                            p Hi! 
+                            h1 我是一名
+                            p 影片剪輯師
+                            p graphic designer 
+                            a(href="#").button
+                                p 觀看作品
+                        .bg_5
+
+            h3 h7yo_studio@gmail.com
+
+            
+
+
+        include components/script.pug

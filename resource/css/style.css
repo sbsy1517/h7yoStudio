@@ -1,0 +1,14 @@
+* {
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+}
+
+.bg {
+  background-image: url(../img/1-ex.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+}
