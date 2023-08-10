@@ -116,6 +116,7 @@ nav
                         // border: 1px solid white
                     &:hover
                         text-transform: uppercase
+                    
                 
 
                 // &:hover
@@ -188,6 +189,8 @@ nav
             width: 80px
             height: 80px
             border-radius: 50%
+            +sm
+                transform: translate(-10px,35px)
             .icon_up
                 transform: rotate(45deg)
                 left: 18px
@@ -227,6 +230,14 @@ nav
                     a
                         text-decoration: none
                         color: black
+                        +md
+                            font-size: 90px
+                        +sm
+                            font-size: 80px
+                    +md
+                        margin-bottom: 40px
+                    +sm
+                        margin-bottom: 30px
                 li#about
                     transform: translateX(-75%)
                     transition-delay: 0.1s
@@ -236,9 +247,10 @@ nav
                 li#contact
                     transform: translateX(-100%)
                     transition-delay: 0.1s
+                
             a.logo_sp
                 position: absolute
-                right: 80px
+                right: 65px
                 bottom: 80px
                 img
                     width: 200px
