@@ -147,6 +147,7 @@ html, body {
 
 body#work section#work {
   position: relative;
+  font-family: lineEN, sans-serif;
 }
 body#work section#work .bg {
   display: block;
