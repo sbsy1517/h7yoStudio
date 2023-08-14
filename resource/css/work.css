@@ -954,7 +954,7 @@ nav .menu.under_md .menu_icon .icon_up {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 21px;
+  top: 20px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
@@ -1010,8 +1010,8 @@ nav .menu.under_md .open .icon_up {
 }
 @media (max-width: 576px) {
   nav .menu.under_md .open .icon_up {
-    left: 12px;
-    top: 30px;
+    left: 11px;
+    top: 29px;
     width: 35px;
   }
 }
@@ -1026,8 +1026,8 @@ nav .menu.under_md .open .icon_down {
 }
 @media (max-width: 576px) {
   nav .menu.under_md .open .icon_down {
-    left: 12px;
-    top: 30px;
+    left: 11px;
+    top: 29px;
     width: 35px;
   }
 }
