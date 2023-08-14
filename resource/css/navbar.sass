@@ -21,6 +21,8 @@ nav
         +lg
             padding: 0 40px
         
+        +md
+            // padding: 0 60px
 
         .logo
             img
@@ -151,6 +153,7 @@ nav
             cursor: pointer
             z-index: 5
             transition-duration: 0.3s
+            
             .icon_up
                 width: 28px
                 height: 2px
@@ -189,18 +192,21 @@ nav
             width: 80px
             height: 80px
             border-radius: 50%
+
             +sm
                 transform: translate(-10px,35px)
+                width: 70px
+                height: 70px
             .icon_up
                 transform: rotate(45deg)
-                left: 18px
-                top: 38px
+                left: 14px
+                top: 33px
                 transition-duration: 0.3s
                 width: 40px
             .icon_down
                 transform: rotate(-45deg)  
-                top: 38px
-                left: 18px
+                top: 33px
+                left: 14px
                 transition-duration: 0.3s
                 width: 40px
         
@@ -254,6 +260,9 @@ nav
                 bottom: 80px
                 img
                     width: 200px
+                +sm
+                    right: 38px
+                    bottom: 40px
         .open_sp
             transform: translateY(0%)
             transition-duration: 0.5s

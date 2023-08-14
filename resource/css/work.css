@@ -972,13 +972,15 @@ nav .menu.under_md .open {
   nav .menu.under_md .open {
     -webkit-transform: translate(-10px, 35px);
             transform: translate(-10px, 35px);
+    width: 70px;
+    height: 70px;
   }
 }
 nav .menu.under_md .open .icon_up {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  left: 18px;
-  top: 38px;
+  left: 14px;
+  top: 33px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   width: 40px;
@@ -986,8 +988,8 @@ nav .menu.under_md .open .icon_up {
 nav .menu.under_md .open .icon_down {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 38px;
-  left: 18px;
+  top: 33px;
+  left: 14px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   width: 40px;
@@ -1072,6 +1074,12 @@ nav .menu.under_md .menu_sp a.logo_sp {
 }
 nav .menu.under_md .menu_sp a.logo_sp img {
   width: 200px;
+}
+@media (max-width: 576px) {
+  nav .menu.under_md .menu_sp a.logo_sp {
+    right: 38px;
+    bottom: 40px;
+  }
 }
 nav .menu.under_md .open_sp {
   -webkit-transform: translateY(0%);
