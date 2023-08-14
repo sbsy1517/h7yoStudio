@@ -7,7 +7,7 @@ nav
         position: absolute
         z-index: 10
         width: 100%
-        min-width: 374px
+        min-width: 280px
         display: flex
         justify-content: space-between
         padding: 0 100px
@@ -140,6 +140,8 @@ nav
         +under_md
         // justify-content: center
         // align-items: center
+        +md
+            padding: 0 30px
         a.logo
             // border: 1px solid #000
             
@@ -153,7 +155,9 @@ nav
             cursor: pointer
             z-index: 5
             transition-duration: 0.3s
-            
+            +sm
+                width: 50px
+                height: 50px
             .icon_up
                 width: 28px
                 height: 2px
@@ -163,7 +167,9 @@ nav
                 +x-center
                 top: 21px
                 transition-duration: 0.3s
-
+                +sm
+                    width: 25px
+                    top: 19px
             .icon_down    
                 width: 28px
                 height: 2px
@@ -172,6 +178,9 @@ nav
                 top: 35px
                 transition-duration: 0.3s
                 +x-center
+                +sm
+                    width: 25px
+                    top: 30px
             // .menuText
             //     position: absolute
             //     +center
@@ -194,21 +203,29 @@ nav
             border-radius: 50%
 
             +sm
-                transform: translate(-10px,35px)
-                width: 70px
-                height: 70px
+                transform: translate(0px,10px)
+                width: 60px
+                height: 60px
             .icon_up
                 transform: rotate(45deg)
-                left: 14px
-                top: 33px
+                left: 19px
+                top: 39px
                 transition-duration: 0.3s
                 width: 40px
+                +sm
+                    left: 12px
+                    top: 30px
+                    width: 35px
             .icon_down
                 transform: rotate(-45deg)  
-                top: 33px
-                left: 14px
+                top: 39px
+                left: 19px
                 transition-duration: 0.3s
                 width: 40px
+                +sm
+                    left: 12px
+                    top: 30px
+                    width: 35px
         
         .menu_sp
             width: 100vw
@@ -228,7 +245,7 @@ nav
                 font-weight: 500
                 position: absolute
                 top: 150px
-                font-size: 100px
+                // font-size: 100px
                 left: -8px
                 
                 li
@@ -236,14 +253,23 @@ nav
                     a
                         text-decoration: none
                         color: black
+                        font-size: 100px
                         +md
                             font-size: 90px
                         +sm
-                            font-size: 80px
+                            font-size: 70px
+                        +xm
+                            font-size: 65px
+                        +se 
+                            font-size: 50px
                     +md
                         margin-bottom: 40px
                     +sm
                         margin-bottom: 30px
+                    // +xm
+                    //     margin-bottom: 20px
+                    // +se
+                    //     margin-bottom: 10px
                 li#about
                     transform: translateX(-75%)
                     transition-delay: 0.1s
@@ -260,9 +286,12 @@ nav
                 bottom: 80px
                 img
                     width: 200px
+                    +sm
+                        width: 160px
                 +sm
                     right: 38px
                     bottom: 40px
+                    // width: 120px
         .open_sp
             transform: translateY(0%)
             transition-duration: 0.5s

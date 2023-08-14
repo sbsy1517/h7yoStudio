@@ -63,6 +63,10 @@ html,body
     @media (max-width: 320px)
         @content
 
+@mixin fold
+    @media (max-width: 280px)
+        @content
+
 @mixin over_md
     display: block
     +md
