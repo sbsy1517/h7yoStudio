@@ -809,6 +809,11 @@ nav .menu .logo img {
   transition: filter 0.5s;
   transition: filter 0.5s, -webkit-filter 0.5s;
 }
+@media (max-width: 414px) {
+  nav .menu .logo img {
+    width: 160px;
+  }
+}
 nav .menu .logo:hover {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);

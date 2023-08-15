@@ -6,7 +6,7 @@
     
 body#about
     overflow-x: hidden
-    min-width: 374px
+    min-width: 280px
 
 
 section
@@ -35,21 +35,27 @@ section
             .image
                 width: 400px
                 height: 400px
-                border: 1px solid #000
-                background-color: grey
+                // border: 1px solid #000
+                background-image: url(../img/about/profile.jpg)
+                background-size: cover
                 margin-left: 50px
+                margin-top: 60px
                 +xl-less
                     width: 300px
-                    height: 300px
+                    height: 400px
+                    background-position: center 0
                 +lg
                     margin-right: 50px
                     margin-left: 0
                     width: 250px
-                    height: 250px
+                    height: 450px
+                    background-position: center 0
+                    margin-top: 0
                 +md
                     margin-right: 30px
-                    width: 200px
-                    height: 200px
+                    width: 100%
+                    height: 350px
+                    background-position: center center
                     
                 
 
@@ -72,17 +78,25 @@ section
                         // width: 300px
                     +md
                         font-size: 30px
-                .content
-                    font-size: 23px
-                    margin-top: 20px
-                    line-height: 1.2
-                    font-weight: 300
-                    display: flex
-                    flex-direction: column
                     
-                        
+                span
+                    font-family: lineJP, sans-serif
+                    // display: inline-block
+                    white-space: normal
+                .content
+                    font-size: 20px
+                    margin-top: 20px
+                    line-height: 1.6
+                    font-weight: 300
+                    letter-spacing: 1px
+                    // white-space: nowrap
+                    // word-break: break-all
+                    .bold
+                        font-weight: 500
+                    .fw300
+                        font-weight: 300
                     +xl-less
-                        font-size: 21px
+                        font-size: 20px
                     +md
                         font-size: 20px
                     
@@ -91,11 +105,25 @@ section
                 font-size: 40px
                 font-family: lineJP, sans-serif
                 margin-top: 25px
+                +md
+                    font-size: 35px
+                +sm
+                    font-size: 30px
             .content.undermd
                 font-size: 20px
                 font-family: lineJP, sans-serif
                 margin-top: 15px
                 line-height: 1.5
+                font-weight: 300
+                
+                .bold
+                    font-weight: 500
+                +md
+                    display: block
+                    letter-spacing: 1.2
+                    line-height: 1.6
+                +sm
+                    font-size: 19px
         .about_exp
             margin: 100px auto 
             font-family: lineEN, sans-serif
@@ -135,18 +163,34 @@ section
                             background-color: black
                             transform: translateX(-8px)
                             border-radius: 50%
-            
-                        h3
-                            margin-left: 40px
-                            font-size: 30px
-                            +md
-                                margin-left: 20px
+                        .wrap
+                            h3
+                                margin-left: 40px
+                                font-size: 30px
+                                +md
+                                    margin-left: 20px
+                                span
+                                    font-size: 20px
+                            p
+                                margin-left: 40px
+                                font-size: 20px
+                                font-weight: 300
+                                margin-top: 10px
+                                +md
+                                    margin-left: 20px
+                        .img.under_sm
+                            // position: absolute
+                            // +y-center
+                            margin: 0 0 0 40px
+                            top: 0
                     .content
                         padding-left: 13px
                         padding-top: 20px
                         border-left: 2px solid #000
                         +sm
                             margin-top: 0
+                        
+
                         .img.undersm
                             width: 100px
                             height: 100px
@@ -159,18 +203,24 @@ section
                             font-size: 22px
                             line-height: 1.3
                             font-weight: 300
-                            width: 550px
-                            height: 250px
+                            // width: 550px
+                            // height: 250px
+                            padding-bottom: 100px
                             +xl-less
-                                width: 400px
+                                // width: 400px
                                 font-size: 21px
                             +lg
-                                width: 300px
-                                height: auto
+                                width: auto
                                 padding-bottom: 50px
                             +md
                                 margin-left: 20px
                                 font-size: 20px
+                        p.job
+                            font-size: 18px
+                            line-height: 1.6
+                            font-weight: 300
+                            margin-top: 20px
+                            letter-spacing: 1px
                 .img
                     width: 200px
                     height: 200px
@@ -186,10 +236,10 @@ section
                     height: 20px
                     width: 2px
                     background-color: black
-                .img
-                    margin-top: 20px
-                    +sm
-                        margin-top: 0
+                // .img
+                //     margin-top: 20px
+                //     +sm
+                //         margin-top: 0
                         
         
             #three
