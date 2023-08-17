@@ -594,6 +594,11 @@ body#about {
   overflow-x: hidden;
   min-width: 280px;
 }
+@media (max-width: 576px) {
+  body#about {
+    padding: 0 10px;
+  }
+}
 
 section {
   padding-top: 50px;
@@ -611,7 +616,13 @@ section .resume {
 }
 @media (max-width: 576px) {
   section .resume {
-    margin-top: 60px;
+    margin: 60px auto 0;
+    width: 400px;
+  }
+}
+@media (max-width: 414px) {
+  section .resume {
+    width: auto;
   }
 }
 section .resume .about {
@@ -644,7 +655,7 @@ section .resume .about {
 }
 @media (max-width: 576px) {
   section .resume .about {
-    width: 400px;
+    width: auto;
   }
 }
 section .resume .about .image {
@@ -806,6 +817,11 @@ section .resume .about_exp {
     width: 400px;
   }
 }
+@media (max-width: 414px) {
+  section .resume .about_exp {
+    width: auto;
+  }
+}
 section .resume .about_exp .title_big {
   font-size: 40px;
   font-weight: 700;
@@ -817,7 +833,6 @@ section .resume .about_exp .title_big {
   }
 }
 section .resume .about_exp .exp_chart {
-  margin-left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,6 +885,11 @@ section .resume .about_exp .exp_chart .exp .title .wrap h3 {
     font-size: 22px;
   }
 }
+@media (max-width: 414px) {
+  section .resume .about_exp .exp_chart .exp .title .wrap h3 {
+    font-size: 20px;
+  }
+}
 section .resume .about_exp .exp_chart .exp .title .wrap h3 span {
   font-size: 20px;
 }
@@ -894,10 +914,30 @@ section .resume .about_exp .exp_chart .exp .title .wrap p {
     font-size: 18px;
   }
 }
-section .resume .about_exp .exp_chart .exp .title img.under_sm {
+@media (max-width: 414px) {
+  section .resume .about_exp .exp_chart .exp .title .wrap p {
+    font-size: 16px;
+  }
+}
+section .resume .about_exp .exp_chart .exp .title img.over_sm {
   margin: 0 0 0 40px;
   top: 0;
-  margin-left: 20px;
+}
+@media (max-width: 576px) {
+  section .resume .about_exp .exp_chart .exp .title img.over_sm {
+    display: none;
+  }
+}
+section .resume .about_exp .exp_chart .exp .title img.under_sm {
+  margin: 0;
+  margin-left: 10px;
+  top: 0;
+  display: none;
+}
+@media (max-width: 576px) {
+  section .resume .about_exp .exp_chart .exp .title img.under_sm {
+    display: block;
+  }
 }
 section .resume .about_exp .exp_chart .exp .content {
   padding-left: 13px;
@@ -948,6 +988,11 @@ section .resume .about_exp .exp_chart .exp .content p.job {
   margin-top: 20px;
   letter-spacing: 1px;
 }
+@media (max-width: 414px) {
+  section .resume .about_exp .exp_chart .exp .content p.job {
+    font-size: 16px;
+  }
+}
 section .resume .about_exp .exp_chart img {
   width: 200px;
   height: 200px;
@@ -997,6 +1042,12 @@ section .resume .about_skill {
 @media (max-width: 576px) {
   section .resume .about_skill {
     width: 400px;
+    margin: 50px auto 0;
+  }
+}
+@media (max-width: 414px) {
+  section .resume .about_skill {
+    width: auto;
   }
 }
 section .resume .about_skill .title_big {
@@ -1047,12 +1098,12 @@ section .resume .about_skill .d-flex .div {
 }
 section .resume .about_skill .d-flex .div img {
   width: 100px;
-  height: 100px;
   margin-bottom: 10px;
 }
 @media (max-width: 576px) {
   section .resume .about_skill .d-flex .div img {
     margin-bottom: 10px;
+    width: 70px;
   }
 }
 section .resume .about_skill .d-flex .div .title {
@@ -1060,6 +1111,11 @@ section .resume .about_skill .d-flex .div .title {
   font-weight: 500;
   margin-bottom: 10px;
   letter-spacing: 2px;
+}
+@media (max-width: 414px) {
+  section .resume .about_skill .d-flex .div .title {
+    font-size: 20px;
+  }
 }
 section .resume .about_skill .d-flex .div .content {
   font-size: 18px;
@@ -1091,7 +1147,7 @@ section .resume .about_icon {
 }
 @media (max-width: 576px) {
   section .resume .about_icon {
-    width: 400px;
+    width: auto;
     margin-top: 40px;
   }
 }
@@ -1126,20 +1182,17 @@ section .resume .about_icon .d-flex {
 }
 section .resume .about_icon .d-flex img {
   width: 80px;
-  height: 80px;
   background-color: grey;
 }
 @media (max-width: 992px) {
   section .resume .about_icon .d-flex img {
     width: 60px;
-    height: 60px;
     margin-right: 20px;
     margin-bottom: 20px;
   }
 }
 section .resume .about_icon .d-flex .adobe {
   width: 70px;
-  height: 70px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1147,6 +1200,10 @@ section .resume .about_icon .d-flex .adobe {
 @media (max-width: 992px) {
   section .resume .about_icon .d-flex .adobe {
     width: 60px;
-    height: 60px;
+  }
+}
+@media (max-width: 576px) {
+  section .resume .about_icon .d-flex .adobe {
+    width: 50px;
   }
 }
