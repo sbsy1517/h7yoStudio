@@ -171,6 +171,13 @@ section
                             transform: translateX(-8px)
                             border-radius: 50%
                         .wrap
+                            img.under_sm
+                                margin: 0
+                                margin-left: 10px
+                                top: 0
+                                display: none
+                                +sm
+                                    display: block
                             h3
                                 margin-left: 40px
                                 font-size: 30px
@@ -204,13 +211,7 @@ section
                             top: 0
                             +sm
                                 display: none
-                        img.under_sm
-                            margin: 0
-                            margin-left: 10px
-                            top: 0
-                            display: none
-                            +sm
-                                display: block
+                        
                     .content
                         padding-left: 13px
                         padding-top: 20px
@@ -220,13 +221,7 @@ section
                         
                         
 
-                        .img.undersm
-                            width: 100px
-                            height: 100px
-                            background-color: grey
-                            margin-left: 20px
-                            top: 0
-                            margin-bottom: 10px
+                        
                         p
                             margin-left: 40px
                             font-size: 22px

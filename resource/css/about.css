@@ -868,6 +868,17 @@ section .resume .about_exp .exp_chart .exp .title .dot {
           transform: translateX(-8px);
   border-radius: 50%;
 }
+section .resume .about_exp .exp_chart .exp .title .wrap img.under_sm {
+  margin: 0;
+  margin-left: 10px;
+  top: 0;
+  display: none;
+}
+@media (max-width: 576px) {
+  section .resume .about_exp .exp_chart .exp .title .wrap img.under_sm {
+    display: block;
+  }
+}
 section .resume .about_exp .exp_chart .exp .title .wrap h3 {
   margin-left: 40px;
   font-size: 30px;
@@ -928,17 +939,6 @@ section .resume .about_exp .exp_chart .exp .title img.over_sm {
     display: none;
   }
 }
-section .resume .about_exp .exp_chart .exp .title img.under_sm {
-  margin: 0;
-  margin-left: 10px;
-  top: 0;
-  display: none;
-}
-@media (max-width: 576px) {
-  section .resume .about_exp .exp_chart .exp .title img.under_sm {
-    display: block;
-  }
-}
 section .resume .about_exp .exp_chart .exp .content {
   padding-left: 13px;
   padding-top: 20px;
@@ -948,14 +948,6 @@ section .resume .about_exp .exp_chart .exp .content {
   section .resume .about_exp .exp_chart .exp .content {
     margin-top: 0;
   }
-}
-section .resume .about_exp .exp_chart .exp .content .img.undersm {
-  width: 100px;
-  height: 100px;
-  background-color: grey;
-  margin-left: 20px;
-  top: 0;
-  margin-bottom: 10px;
 }
 section .resume .about_exp .exp_chart .exp .content p {
   margin-left: 40px;
