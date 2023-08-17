@@ -1100,10 +1100,20 @@ section .resume .about_skill .d-flex .div img {
   width: 100px;
   margin-bottom: 10px;
 }
+@media (max-width: 992px) {
+  section .resume .about_skill .d-flex .div img {
+    width: 80px;
+  }
+}
 @media (max-width: 576px) {
   section .resume .about_skill .d-flex .div img {
     margin-bottom: 10px;
     width: 70px;
+  }
+}
+@media (max-width: 414px) {
+  section .resume .about_skill .d-flex .div img {
+    width: 50px;
   }
 }
 section .resume .about_skill .d-flex .div .title {
