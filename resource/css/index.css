@@ -604,7 +604,6 @@ nav .menu.under_md .menu_sp ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "lineEN", sans-serif;
   font-weight: 500;
   position: absolute;
   top: 150px;
@@ -617,6 +616,7 @@ nav .menu.under_md .menu_sp ul li a {
   text-decoration: none;
   color: black;
   font-size: 100px;
+  font-family: "lineEN", sans-serif;
 }
 @media (max-width: 768px) {
   nav .menu.under_md .menu_sp ul li a {
