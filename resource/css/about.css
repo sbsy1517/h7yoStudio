@@ -583,8 +583,32 @@ footer {
           justify-content: center;
   padding-bottom: 30px;
 }
+@media (max-width: 992px) {
+  footer {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+}
 footer .email {
   padding: 20px;
+}
+@media (max-width: 576px) {
+  footer .email {
+    padding: 0;
+  }
 }
 footer .copyright {
   padding: 20px;
@@ -594,14 +618,14 @@ body#about {
   overflow-x: hidden;
   min-width: 280px;
 }
-@media (max-width: 576px) {
-  body#about {
-    padding: 0 10px;
-  }
-}
 
 section {
   padding-top: 50px;
+}
+@media (max-width: 576px) {
+  section {
+    padding: 50px 15px 0;
+  }
 }
 section .resume {
   margin-top: 80px;
@@ -789,7 +813,7 @@ section .resume .about .content.undermd .bold {
 }
 @media (max-width: 576px) {
   section .resume .about .content.undermd {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 section .resume .about_exp {
@@ -1134,12 +1158,12 @@ section .resume .about_icon {
 @media (max-width: 1200px) {
   section .resume .about_icon {
     width: 850px;
-    margin-top: 0px;
   }
 }
 @media (max-width: 992px) {
   section .resume .about_icon {
     width: 700px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 768px) {
