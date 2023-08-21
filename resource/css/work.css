@@ -452,7 +452,7 @@ body#work section#work .boxxx .d-flex .wrap .photo #photo3 {
 
 body#work_website {
   overflow-x: hidden;
-  min-width: 374px;
+  min-width: 280px;
 }
 body#work_website header {
   display: -webkit-box;
@@ -618,7 +618,7 @@ body#work_website section .block {
 @media (max-width: 768px) {
   body#work_website section .block {
     width: 100%;
-    min-width: 374px;
+    margin: 20px 0;
   }
 }
 @media (max-width: 576px) {
@@ -626,15 +626,22 @@ body#work_website section .block {
     height: 300px;
   }
 }
+body#work_website section .block:hover .img {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
 body#work_website section .block .img {
-  background-color: grey;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
 body#work_website section .block .title {
   position: absolute;
+  color: white;
   bottom: 30px;
-  font-size: 60px;
+  font-size: 50px;
   left: 40px;
   font-family: lineEN, lineJP, sans-serif;
   font-weight: 500;
@@ -643,24 +650,24 @@ body#work_website section .block .title {
 }
 @media (max-width: 1366px) {
   body#work_website section .block .title {
-    font-size: 50px;
+    font-size: 45px;
     left: 40px;
   }
 }
 @media (max-width: 768px) {
   body#work_website section .block .title {
-    font-size: 45px;
+    font-size: 40px;
     text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
   }
 }
 @media (max-width: 576px) {
   body#work_website section .block .title {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 body#work_website section .block .intro {
   width: 100%;
-  background-color: rgba(87, 87, 87, 0.8);
+  background-color: rgba(132, 132, 132, 0.8);
   height: 250px;
   position: absolute;
   -webkit-transform: translateY(250px);
@@ -684,10 +691,10 @@ body#work_website section .block .intro {
 }
 body#work_website section .block .intro p {
   color: white;
-  font-size: 25px;
+  font-size: 23px;
   letter-spacing: 1.5pt;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 @media (max-width: 992px) {
   body#work_website section .block .intro p {
@@ -702,7 +709,7 @@ body#work_website section .block:hover .title {
   -webkit-transform: translateY(-195px);
           transform: translateY(-195px);
   z-index: 5;
-  text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
+  text-shadow: -1px 0px 1px rgba(90, 90, 90, 0.8);
 }
 @media (max-width: 992px) {
   body#work_website section .block:hover .title {
@@ -717,11 +724,25 @@ body#work_website section .block:hover .title {
   }
 }
 body#work_website section #one_img .img {
-  background-image: url(../img/website/1.jpg);
-  background-size: cover;
+  background-image: url(../img/website/0.jpg);
 }
-body#work_website section #one_img .title {
-  color: white;
+body#work_website section #two_img .img {
+  background-image: url(../img/website/01.jpg);
+}
+body#work_website section #two_img .title {
+  text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
+}
+body#work_website section #three_img .img {
+  background-image: url(../img/website/fv3.jpg);
+}
+body#work_website section #three_img .title {
+  text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
+}
+body#work_website section #four_img .img {
+  background-image: url(../img/website/fv4.jpg);
+}
+body#work_website section #four_img .title {
+  text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
 }
 body#work_website section .modal .modal-header {
   border: none;
@@ -730,7 +751,6 @@ body#work_website section .modal .modal-header button {
   right: 50px;
   top: 50px;
   width: 40px;
-  height: 40px;
   z-index: 5;
   background: none;
   display: block;
@@ -740,6 +760,19 @@ body#work_website section .modal .modal-header button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+@media (max-width: 768px) {
+  body#work_website section .modal .modal-header button {
+    top: 30px;
+    right: 30px;
+  }
+}
+@media (max-width: 576px) {
+  body#work_website section .modal .modal-header button {
+    top: 20px;
+    right: 20px;
+    width: 35px;
+  }
+}
 body#work_website section .modal .modal-header svg {
   color: rgb(0, 0, 0);
   display: block;
@@ -748,17 +781,80 @@ body#work_website section .modal .modal-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-body#work_website section .modal .modal-body img {
-  width: 60%;
+body#work_website section .modal .modal-body .wraper {
+  display: inline-block;
+  width: clamp(280px, 80%, 900px);
+}
+@media (max-width: 414px) {
+  body#work_website section .modal .modal-body .wraper {
+    width: 100%;
+  }
+}
+body#work_website section .modal .modal-body .wraper img {
+  width: 100%;
+}
+body#work_website section .modal .modal-body .wraper h3 {
   margin-top: 100px;
+  font-family: lineEN, sans-serif, lineJP, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  display: inline-block;
+}
+@media (max-width: 992px) {
+  body#work_website section .modal .modal-body .wraper h3 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body#work_website section .modal .modal-body .wraper h3 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 576px) {
+  body#work_website section .modal .modal-body .wraper h3 {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 414px) {
+  body#work_website section .modal .modal-body .wraper h3 {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+}
+body#work_website section .modal .modal-body .wraper p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: 15px;
+  display: none;
+}
+@media (max-width: 768px) {
+  body#work_website section .modal .modal-body .wraper p {
+    font-size: 20px;
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  body#work_website section .modal .modal-body .wraper p {
+    font-size: 18px;
+  }
+}
+body#work_website section .modal .modal-body .wraper img#fv {
+  margin-top: 20px;
+}
+@media (max-width: 414px) {
+  body#work_website section .modal .modal-body .wraper img#fv {
+    margin-top: 10px;
+  }
+}
+body#work_website section .modal .modal-body .wraper img#fv:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 nav {
