@@ -597,6 +597,8 @@ body#work_website section .block {
   height: 600px;
   overflow: hidden;
   cursor: pointer;
+  -webkit-box-shadow: -1px 0px 10px rgba(90, 90, 90, 0.4);
+          box-shadow: -1px 0px 10px rgba(90, 90, 90, 0.4);
 }
 @media (max-width: 1366px) {
   body#work_website section .block {
@@ -636,6 +638,7 @@ body#work_website section .block .img {
   background-size: cover;
   width: 100%;
   height: 100%;
+  background-position: center center;
 }
 body#work_website section .block .title {
   position: absolute;
@@ -644,9 +647,11 @@ body#work_website section .block .title {
   font-size: 50px;
   left: 40px;
   font-family: lineEN, lineJP, sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  background-color: #333;
+  padding: 6px;
 }
 @media (max-width: 1366px) {
   body#work_website section .block .title {
@@ -663,6 +668,7 @@ body#work_website section .block .title {
 @media (max-width: 576px) {
   body#work_website section .block .title {
     font-size: 30px;
+    left: 20px;
   }
 }
 body#work_website section .block .intro {
@@ -742,6 +748,24 @@ body#work_website section #four_img .img {
   background-image: url(../img/website/fv4.jpg);
 }
 body#work_website section #four_img .title {
+  text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
+}
+body#work_website section #five_img .img {
+  background-image: url(../img/website/fv55.jpg);
+}
+body#work_website section #five_img .title {
+  text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
+}
+body#work_website section #six_img .img {
+  background-image: url(../img/website/13.jpg);
+}
+body#work_website section #six_img .title {
+  text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
+}
+body#work_website section #seven_img .img {
+  background-image: url(../img/website/16.jpg);
+}
+body#work_website section #seven_img .title {
   text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
 }
 body#work_website section .modal .modal-header {
@@ -831,7 +855,6 @@ body#work_website section .modal .modal-body .wraper p {
   font-size: 22px;
   line-height: 1.5;
   margin-top: 15px;
-  display: none;
 }
 @media (max-width: 768px) {
   body#work_website section .modal .modal-body .wraper p {
@@ -855,6 +878,17 @@ body#work_website section .modal .modal-body .wraper img#fv {
 body#work_website section .modal .modal-body .wraper img#fv:hover {
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
+}
+body#work_website section .modal .modal-body .wraper img#fv2 {
+  margin-top: 20px;
+}
+@media (max-width: 414px) {
+  body#work_website section .modal .modal-body .wraper img#fv2 {
+    margin-top: 10px;
+  }
+}
+body#work_website footer {
+  top: 230px;
 }
 
 nav {
