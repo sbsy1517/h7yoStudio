@@ -308,6 +308,12 @@ body#work section#work .boxxx .d-flex .wrap {
   width: 50%;
   position: relative;
 }
+body#work section#work .boxxx .d-flex .wrap:hover .carousel.slide {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
 @media (max-width: 768px) {
   body#work section#work .boxxx .d-flex .wrap {
     width: 100%;
@@ -321,6 +327,7 @@ body#work section#work .boxxx .d-flex .wrap .title {
   color: white;
   font-size: 60px;
   font-weight: 500;
+  text-shadow: -1px 0px 10px rgba(90, 90, 90, 0.8);
 }
 @media (max-width: 1200px) {
   body#work section#work .boxxx .d-flex .wrap .title {
@@ -330,7 +337,9 @@ body#work section#work .boxxx .d-flex .wrap .title {
   }
 }
 body#work section#work .boxxx .d-flex .wrap .website .carousel-item {
-  background-color: #8edac5;
+  background-image: url(../img/website/0.jpg);
+  background-size: cover;
+  background-position: center center;
   height: 500px;
 }
 @media (max-width: 1200px) {
@@ -354,10 +363,25 @@ body#work section#work .boxxx .d-flex .wrap .website .carousel-item {
   }
 }
 body#work section#work .boxxx .d-flex .wrap .website #website2 {
-  background-color: #868686;
+  background-image: url(../img/website/01.jpg);
 }
 body#work section#work .boxxx .d-flex .wrap .website #website3 {
-  background-color: #242424;
+  background-image: url(../img/website/fv3.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .website #website4 {
+  background-image: url(../img/website/fv4.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .website #website5 {
+  background-image: url(../img/website/fv55.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .website #website6 {
+  background-image: url(../img/website/13.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .website #website7 {
+  background-image: url(../img/website/27.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .website #website8 {
+  background-image: url(../img/website/16.jpg);
 }
 body#work section#work .boxxx .d-flex .wrap .graphic .carousel-item {
   background-color: #4cc1a0;
