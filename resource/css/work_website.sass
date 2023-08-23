@@ -19,6 +19,8 @@ body#work_website
             text-decoration: none
             +lg
                 left: 30px
+            +sm
+                left: 20px
             svg
                 // font-size: 50px
                 display: block
@@ -32,6 +34,9 @@ body#work_website
                     width: 50px
                 +sm
                     width: 40px
+                +xm
+                    width: 30px
+                    
             .title_back
                 font-size: 100px
                 font-family: lineEN, sans-serif
@@ -46,7 +51,12 @@ body#work_website
                     font-size: 50px
                 +sm
                     font-size: 40px
-
+                    padding-left: 10px
+                +xm
+                    font-size: 35px
+                +ip5
+                    display: none
+                    
             &:hover
                 color: black
                 svg
@@ -55,15 +65,19 @@ body#work_website
             font-size: 100px
             font-family: lineEN, sans-serif
             font-weight: 500
-            right: -20px
+            right: 50px
             +xl
                 font-size: 80px
             +lg
                 font-size: 60px
+                right: 30px
             +md
                 font-size: 50px
             +sm
                 font-size: 40px
+                right: 20px
+            +xm
+                font-size: 35px
             // border: 1px solid #000
 
     
@@ -127,8 +141,9 @@ body#work_website
                     font-size: 40px
                     text-shadow: -1px 0px 10px rgba(90,90,90,0.8)
                 +sm
-                    font-size: 30px
-                    left: 20px
+                    font-size: 25px
+                    left: 10px
+                    bottom: 12px
                 
             .intro
                 width: 100%
@@ -167,7 +182,9 @@ body#work_website
                         transform: translateY(-150px)
                     +md
                         transform: translateY(0)
-            
+        #zero_img
+            .img
+                background-image: url(../img/website/24.jpg)    
         #one_img
             .img
                 background-image: url(../img/website/0.jpg)
@@ -205,6 +222,10 @@ body#work_website
                 background-image: url(../img/website/16.jpg)
             .title
                 text-shadow: -1px 0px 10px rgba(90,90,90,0.8)
+        
+        #eight_img
+            .img
+                background-image: url(../img/website/27.jpg)
         .modal
             
             .modal-header
@@ -286,3 +307,5 @@ body#work_website
     
     footer
         top: 230px
+        +md
+            top: 100px
