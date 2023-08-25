@@ -955,6 +955,9 @@ body footer {
   }
 }
 
+body#work_video .modal .modal-body p {
+  padding-bottom: 20px;
+}
 body#work_video .modal .modal-body .video {
   position: relative;
   width: 100%;
@@ -973,6 +976,24 @@ body#work_video #one_img .img {
 }
 body#work_video #eight_img .img {
   background-image: url(../img/video/2.png);
+}
+body#work_video #two_img .img {
+  background-image: url(../img/video/3.png);
+}
+body#work_video #three_img .img {
+  background-image: url(../img/video/4.png);
+}
+body#work_video #four_img .img {
+  background-image: url(../img/video/5.png);
+}
+body#work_video #five_img .img {
+  background-image: url(../img/video/6.png);
+}
+body#work_video #six_img .img {
+  background-image: url(../img/video/7.png);
+}
+body#work_video #seven_img .img {
+  background-image: url(../img/video/8.png);
 }
 
 nav {
