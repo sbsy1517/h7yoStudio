@@ -1,0 +1,30 @@
+body#work_photo
+
+    #one_img
+        .img 
+            background-image: url(../img/photo/profile/1.jpg) 
+    #two_img
+        .img 
+            background-image: url(../img/photo/view/61.jpg) 
+
+    .modal
+        .modal-body
+            .wraper
+                width: clamp(280px, 90%, 1200px)
+                p
+                    padding-bottom: 20px
+                .d-flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    // align-items: flex-start
+                    img
+                        width: 48%
+                        margin-bottom: 40px
+                        // box-shadow: -1px 0px 10px rgba(234, 234, 234, 0.4)
+                        +md
+                            width: 100%
+                            margin-bottom: 20px
+                        +xm
+                            margin-bottom: 10px
+                    .w-100
+                        height: 50px

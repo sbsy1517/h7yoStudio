@@ -508,6 +508,11 @@ nav .menu.under_md {
     padding: 0 30px;
   }
 }
+@media (max-width: 576px) {
+  nav .menu.under_md {
+    height: 80px;
+  }
+}
 nav .menu.under_md .menu_icon {
   width: 60px;
   height: 60px;
