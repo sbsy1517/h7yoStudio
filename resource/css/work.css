@@ -923,6 +923,9 @@ body#work_graphic #eight_img .img {
 body#work_graphic #nine_img .img {
   background-image: url(../img/graphic/biccamera/0.jpg);
 }
+body#work_graphic #ten_img .img {
+  background-image: url(../img/graphic/ibaraki/0.jpg);
+}
 body#work_graphic .modal .modal-body .wraper {
   width: clamp(280px, 90%, 1200px);
 }
