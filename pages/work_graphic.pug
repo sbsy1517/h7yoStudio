@@ -263,5 +263,38 @@ html(lang="en")
                                     
                                     .w-100
 
+
+            .block#six_img(data-bs-toggle="modal" data-bs-target="#block6")
+                .img
+                    
+                .title 霍普金斯診所
+                .intro 
+                    p 霍普金斯診所為提供體態雕塑及科學瘦身等服務
+                        br
+                        |主要負責品牌網路行銷廣告設計製作
+            .modal.fade#block6(tabindex="-1" aria-labelledby="one" aria-hidden="true")
+                .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+                    .modal-content
+                        .modal-header
+                            button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+                                svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+                                    g#crossIcon_g
+                                        path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+                                        path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+                        .modal-body
+                            .wraper
+                                h3 霍普金斯診所
+                                p 霍普金斯診所為提供體態雕塑及科學瘦身等服務
+                                    br
+                                    |主要負責品牌網路行銷廣告設計製作
+                                .d-flex
+                                    img(src="../resource/img/graphic/hopkins/1.jpg", alt="") 
+                                    img(src="../resource/img/graphic/hopkins/2.jpg", alt="")
+                                    img(src="../resource/img/graphic/hopkins/3.jpg", alt="")
+                                    img(src="../resource/img/graphic/hopkins/4.jpg", alt="")
+                                    
+                                    
+                                    .w-100
+
         include ../components/footer.pug
         include ../components/script.pug
