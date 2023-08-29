@@ -255,7 +255,9 @@ body#work section#work .boxxx .d-flex .wrap .website #website8 {
   background-image: url(../img/website/16.jpg);
 }
 body#work section#work .boxxx .d-flex .wrap .graphic .carousel-item {
-  background-color: #4cc1a0;
+  background-image: url(../img/graphic//0.jpg);
+  background-size: cover;
+  background-position: center center;
   height: 500px;
 }
 @media (max-width: 1200px) {
@@ -892,6 +894,46 @@ body footer {
   body footer {
     top: 100px;
   }
+}
+
+body#work_graphic #one_img .img {
+  background-image: url(../img/graphic/sousou/0.jpg);
+}
+body#work_graphic #two_img .img {
+  background-image: url(../img/graphic/view/61.jpg);
+}
+body#work_graphic .modal .modal-body .wraper {
+  width: clamp(280px, 90%, 1200px);
+}
+body#work_graphic .modal .modal-body .wraper p {
+  padding-bottom: 20px;
+}
+body#work_graphic .modal .modal-body .wraper .d-flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body#work_graphic .modal .modal-body .wraper .d-flex img {
+  width: 48%;
+  margin-bottom: 40px;
+  -webkit-box-shadow: -1px 0px 5px rgba(87, 87, 87, 0.4);
+          box-shadow: -1px 0px 5px rgba(87, 87, 87, 0.4);
+}
+@media (max-width: 768px) {
+  body#work_graphic .modal .modal-body .wraper .d-flex img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 414px) {
+  body#work_graphic .modal .modal-body .wraper .d-flex img {
+    margin-bottom: 10px;
+  }
+}
+body#work_graphic .modal .modal-body .wraper .d-flex .w-100 {
+  height: 50px;
 }
 
 body#work_video .modal .modal-body p {
