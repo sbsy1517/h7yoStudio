@@ -905,6 +905,12 @@ body#work_graphic #two_img .img {
 body#work_graphic #three_img .img {
   background-image: url(../img/graphic/jeogseoul/0.jpg);
 }
+body#work_graphic #four_img .img {
+  background-image: url(../img/graphic/muji/0.jpg);
+}
+body#work_graphic #five_img .img {
+  background-image: url(../img/graphic/dandyhouse/0.jpg);
+}
 body#work_graphic .modal .modal-body .wraper {
   width: clamp(280px, 90%, 1200px);
 }
