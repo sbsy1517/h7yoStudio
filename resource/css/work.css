@@ -255,7 +255,7 @@ body#work section#work .boxxx .d-flex .wrap .website #website8 {
   background-image: url(../img/website/16.jpg);
 }
 body#work section#work .boxxx .d-flex .wrap .graphic .carousel-item {
-  background-image: url(../img/graphic//0.jpg);
+  background-image: url(../img/graphic/sousou/0.jpg);
   background-size: cover;
   background-position: center center;
   height: 500px;
@@ -281,10 +281,31 @@ body#work section#work .boxxx .d-flex .wrap .graphic .carousel-item {
   }
 }
 body#work section#work .boxxx .d-flex .wrap .graphic #graphic2 {
-  background-color: #77c1c2;
+  background-image: url(../img/graphic/covermark/0.jpg);
 }
 body#work section#work .boxxx .d-flex .wrap .graphic #graphic3 {
-  background-color: #9692e0;
+  background-image: url(../img/graphic/muji/0.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .graphic #graphic4 {
+  background-image: url(../img/graphic/sega/0.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .graphic #graphic5 {
+  background-image: url(../img/graphic/dmm/0.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .graphic #graphic6 {
+  background-image: url(../img/graphic/dandyhouse/0.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .graphic #graphic7 {
+  background-image: url(../img/graphic/ibaraki/0.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .graphic #graphic8 {
+  background-image: url(../img/graphic/hopkins/0.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .graphic #graphic9 {
+  background-image: url(../img/graphic/biccamera/0.jpg);
+}
+body#work section#work .boxxx .d-flex .wrap .graphic #graphic10 {
+  background-image: url(../img/graphic/jeogseoul/0.jpg);
 }
 body#work section#work .boxxx .d-flex .wrap .video .carousel-item {
   background-image: url(../img/video/1.jpg);
