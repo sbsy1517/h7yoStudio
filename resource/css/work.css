@@ -1070,6 +1070,12 @@ body#work_video #six_img .img {
 body#work_video #seven_img .img {
   background-image: url(../img/video/8.jpg);
 }
+body#work_video #nine_img .img {
+  background-image: url(../img/video/9.jpg);
+}
+body#work_video #ten_img .img {
+  background-image: url(../img/video/10.jpeg);
+}
 
 body#work_photo #one_img .img {
   background-image: url(../img/photo/profile/1.jpg);
