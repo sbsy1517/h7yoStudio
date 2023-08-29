@@ -900,7 +900,7 @@ body#work_graphic #one_img .img {
   background-image: url(../img/graphic/sousou/0.jpg);
 }
 body#work_graphic #two_img .img {
-  background-image: url(../img/graphic/view/61.jpg);
+  background-image: url(../img/graphic/covermark/0.jpg);
 }
 body#work_graphic .modal .modal-body .wraper {
   width: clamp(280px, 90%, 1200px);
