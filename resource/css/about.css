@@ -237,7 +237,7 @@ nav .menu ul .about a, nav .menu ul .work a, nav .menu ul .contact a {
 nav .menu ul .about a p, nav .menu ul .work a p, nav .menu ul .contact a p {
   display: block;
   color: black;
-  font-family: "lineJP", sans-serif;
+  font-family: "lineEN", sans-serif;
   font-size: 25px;
 }
 nav .menu ul .about:hover p, nav .menu ul .work:hover p, nav .menu ul .contact:hover p {
@@ -306,6 +306,7 @@ nav .menu ul li.contact a {
   font-weight: 500;
   padding: 20px 0;
   color: white;
+  font-family: "lineEN", sans-serif;
 }
 nav .menu ul li.contact a:hover {
   text-transform: uppercase;
@@ -321,6 +322,7 @@ nav .menu ul .sub-menu li a {
   font-weight: 500;
   padding: 20px 0;
   color: white;
+  font-family: "lineEN", sans-serif;
 }
 nav .menu ul .sub-menu li:hover {
   text-transform: uppercase;
