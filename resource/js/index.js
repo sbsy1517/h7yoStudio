@@ -29,7 +29,7 @@ window.addEventListener('load', function() {
             loadingScreen.style.display = 'none';
             body.classList.remove('disable-scroll');
       }, 500); // 或者您認為合適的時間
-    }, 1500);
+    }, 1000);
 });
 
 // window.addEventListener('scroll', function() {
