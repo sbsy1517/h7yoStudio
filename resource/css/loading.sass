@@ -54,6 +54,19 @@ body.disable-scroll
             +lg
                 top: 52%
 
+body#index
+    .loading-screen
+        img#indeximg 
+            display: block
+        img#others
+            display: none
+
+body#about, body#work_graphic, body#work_photo, body#work_video, body#work_website, body#work
+    .loading-screen
+        img#indeximg 
+            display: none
+        img#others
+            display: block
 .loading-screen.fade-out
     animation: fadeOut 0.5s forwards
 .z-index0

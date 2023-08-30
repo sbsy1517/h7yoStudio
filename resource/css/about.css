@@ -239,6 +239,7 @@ nav .menu ul .about a p, nav .menu ul .work a p, nav .menu ul .contact a p {
   color: black;
   font-family: "lineEN", sans-serif;
   font-size: 25px;
+  font-weight: 500;
 }
 nav .menu ul .about:hover p, nav .menu ul .work:hover p, nav .menu ul .contact:hover p {
   text-transform: uppercase;
@@ -477,7 +478,6 @@ nav .menu.under_md .menu_sp ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-weight: 500;
   position: absolute;
   top: 150px;
   left: -8px;
@@ -733,6 +733,20 @@ body.disable-scroll {
   .loading-screen .intro p {
     top: 52%;
   }
+}
+
+body#index .loading-screen img#indeximg {
+  display: block;
+}
+body#index .loading-screen img#others {
+  display: none;
+}
+
+body#about .loading-screen img#indeximg, body#work_graphic .loading-screen img#indeximg, body#work_photo .loading-screen img#indeximg, body#work_video .loading-screen img#indeximg, body#work_website .loading-screen img#indeximg, body#work .loading-screen img#indeximg {
+  display: none;
+}
+body#about .loading-screen img#others, body#work_graphic .loading-screen img#others, body#work_photo .loading-screen img#others, body#work_video .loading-screen img#others, body#work_website .loading-screen img#others, body#work .loading-screen img#others {
+  display: block;
 }
 
 .loading-screen.fade-out {
