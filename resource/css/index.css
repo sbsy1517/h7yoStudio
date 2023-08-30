@@ -769,6 +769,7 @@ nav .menu.under_md .menu_sp ul li a {
   text-decoration: none;
   color: black;
   font-size: 100px;
+  font-weight: 500;
   font-family: "lineEN", sans-serif;
 }
 @media (max-width: 768px) {
