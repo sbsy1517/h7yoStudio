@@ -1556,7 +1556,17 @@ nav .menu.under_md .menu_sp ul {
           flex-direction: column;
   position: absolute;
   top: 150px;
-  left: -8px;
+  left: 50px;
+}
+@media (max-width: 576px) {
+  nav .menu.under_md .menu_sp ul {
+    left: 30px;
+  }
+}
+@media (max-width: 414px) {
+  nav .menu.under_md .menu_sp ul {
+    left: 10px;
+  }
 }
 nav .menu.under_md .menu_sp ul li {
   margin-bottom: 45px;
@@ -1617,8 +1627,8 @@ nav .menu.under_md .menu_sp ul li#work {
           transition-delay: 0.1s;
 }
 nav .menu.under_md .menu_sp ul li#contact {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-125%);
+          transform: translateX(-125%);
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
@@ -1686,8 +1696,8 @@ nav .menu.under_md .open_sp ul li#contact {
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 #work_website nav .menu:hover {
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 1px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 1px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer {

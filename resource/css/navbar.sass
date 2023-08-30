@@ -269,7 +269,11 @@ nav
                 position: absolute
                 top: 150px
                 // font-size: 100px
-                left: -8px
+                left: 50px
+                +sm
+                    left: 30px
+                +xm
+                    left: 10px
                 
                 li
                     margin-bottom: 45px 
@@ -305,7 +309,7 @@ nav
                     transform: translateX(-75%)
                     transition-delay: 0.1s
                 li#contact
-                    transform: translateX(-100%)
+                    transform: translateX(-125%)
                     transition-delay: 0.1s
                 
             a.logo_sp
@@ -350,4 +354,4 @@ nav
             background-color: #fff
             box-shadow: 0 1px 5px rgba(0,0,0,0.1), 0 1px 5px rgba(0,0,0,0.1)
             &:hover
-                box-shadow: 0 1px 10px rgba(0,0,0,0.2), 0 1px 10px rgba(0,0,0,0.2)
+                box-shadow: 0 1px 5px rgba(0,0,0,0.2), 0 1px 10px rgba(0,0,0,0.2)
