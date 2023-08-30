@@ -17,6 +17,21 @@ $('.menu_icon').click(function(){
     $(this).siblings('.menu_sp').toggleClass('open_sp');
 });
 
+window.addEventListener('load', function() {
+    const loadingScreen = document.querySelector('.loading-screen');
+    const body = document.querySelector('body');
+
+    setTimeout(function() {
+        loadingScreen.classList.add('fade-out');
+        body.classList.add('disable-scroll');
+
+        setTimeout(function() {
+            loadingScreen.style.display = 'none';
+            body.classList.remove('disable-scroll');
+      }, 500); // 或者您認為合適的時間
+    }, 1500);
+});
+
 // window.addEventListener('scroll', function() {
 //     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 //     var windowHeight = window.innerHeight;

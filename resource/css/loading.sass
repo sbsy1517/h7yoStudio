@@ -1,0 +1,60 @@
+@import "keyframes.sass"
+body.disable-scroll
+    overflow: hidden
+
+.loading-screen
+    background-color: white
+    height: 100vh
+    width: 100vw
+    // display: flex
+    // justify-content: center
+    // align-items: center
+    min-height: 568px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 20
+    overflow: hidden
+    img
+        position: absolute
+        width: 500px
+        top: 35%
+        left: 10%
+        +lg
+            width: 400px
+        +md
+            width: 300px
+        +sm
+            width: 250px
+        +xm
+            width: 200px
+    .intro
+        position: absolute
+        font-weight: 500
+        font-size: 70px
+        word-spacing: 50px
+        width: 100vw
+        height: 100vh
+        overflow: hidden
+        +lg
+            font-size: 50px
+        +md
+            font-size: 40px
+        +sm
+            font-size: 35px
+        +xm
+            font-size: 30px
+        p
+            top: 60%
+            left: -10%
+            width: 30000px
+            font-weight: 500
+            font-family: lineEN, sans serif
+            animation: slide 20s linear infinite /* 使用動畫來實現滑動效果 */
+            +lg
+                top: 52%
+
+.loading-screen.fade-out
+    animation: fadeOut 0.5s forwards
+.z-index0
+    z-index: 1

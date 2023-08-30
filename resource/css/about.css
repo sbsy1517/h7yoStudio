@@ -611,6 +611,137 @@ nav .menu.under_md .open_sp ul li#contact {
           box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
+@-webkit-keyframes slide {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: -2000px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: -2000px;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 20;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 20;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+body.disable-scroll {
+  overflow: hidden;
+}
+
+.loading-screen {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  min-height: 568px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  overflow: hidden;
+}
+.loading-screen img {
+  position: absolute;
+  width: 500px;
+  top: 35%;
+  left: 10%;
+}
+@media (max-width: 992px) {
+  .loading-screen img {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .loading-screen img {
+    width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .loading-screen img {
+    width: 250px;
+  }
+}
+@media (max-width: 414px) {
+  .loading-screen img {
+    width: 200px;
+  }
+}
+.loading-screen .intro {
+  position: absolute;
+  font-weight: 500;
+  font-size: 70px;
+  word-spacing: 50px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .loading-screen .intro {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .loading-screen .intro {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .loading-screen .intro {
+    font-size: 35px;
+  }
+}
+@media (max-width: 414px) {
+  .loading-screen .intro {
+    font-size: 30px;
+  }
+}
+.loading-screen .intro p {
+  top: 60%;
+  left: -10%;
+  width: 30000px;
+  font-weight: 500;
+  font-family: lineEN, sans serif;
+  -webkit-animation: slide 20s linear infinite;
+          animation: slide 20s linear infinite;
+}
+@media (max-width: 992px) {
+  .loading-screen .intro p {
+    top: 52%;
+  }
+}
+
+.loading-screen.fade-out {
+  -webkit-animation: fadeOut 0.5s forwards;
+          animation: fadeOut 0.5s forwards;
+}
+
+.z-index0 {
+  z-index: 1;
+}
+
 footer {
   width: 100%;
   margin-top: 30px;
