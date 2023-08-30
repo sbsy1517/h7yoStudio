@@ -1547,7 +1547,7 @@ nav .menu.under_md .menu_sp ul {
 }
 @media (max-width: 414px) {
   nav .menu.under_md .menu_sp ul {
-    left: 20px;
+    left: 15px;
   }
 }
 nav .menu.under_md .menu_sp ul li {
