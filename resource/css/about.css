@@ -802,6 +802,7 @@ footer {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     text-align: center;
+    margin-top: 80px;
   }
 }
 footer .email {
