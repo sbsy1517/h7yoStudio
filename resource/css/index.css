@@ -313,28 +313,54 @@ body#about .loading-screen img#others, body#work_graphic .loading-screen img#oth
 
 header {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-header .bg .carousel-inner .title {
-  font-family: "lineJP", sans-serif;
-  position: absolute;
-  font-size: 50px;
-  z-index: 2;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+header .bg_1 {
+  background-image: url(../img/home3.jpg);
+  background-size: cover;
+  background-position: bottom left;
+  height: 100vh;
+  width: 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: background-size 0.5s;
+  transition: background-size 0.5s;
 }
-header .bg .carousel-inner .title h1 {
+header .bg {
+  height: 100vh;
+  width: 50%;
+}
+header .bg h1 {
   font-weight: bold;
   margin-top: 20px;
   letter-spacing: 2pt;
 }
-header .bg .carousel-inner .title h1, header .bg .carousel-inner .title p {
+header .bg h1, header .bg p, header .bg h2 {
   margin: 20px 0;
+  font-size: 50px;
 }
-header .bg .carousel-inner .button {
+header .bg .wrap {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 10%;
+}
+header .bg .wrap .card {
+  width: auto;
+  background-color: none;
+  border: none;
+}
+header .bg .wrap .card .carousel-inner {
+  font-family: lineEN, sans-serif, "lineJP", sans-serif;
+  font-weight: 500;
+}
+header .bg .wrap .card .carousel-inner img {
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+header .bg .wrap .card .carousel-inner .button {
   width: 200px;
   height: 50px;
   border: 1px solid #000;
@@ -349,49 +375,16 @@ header .bg .carousel-inner .button {
           align-items: center;
   text-decoration: none;
   color: #000;
+  margin-top: 50px;
 }
-header .bg .carousel-inner .button p {
+header .bg .wrap .card .carousel-inner .button p {
   font-size: 20px;
 }
-header .bg .carousel-inner .button:hover {
+header .bg .wrap .card .carousel-inner .button:hover {
   background: black;
 }
-header .bg .carousel-inner .button:hover p {
+header .bg .wrap .card .carousel-inner .button:hover p {
   color: white;
-}
-header .bg .carousel-inner .bg_1 {
-  background-image: url(../img/home.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  -webkit-transition: background-size 0.5s;
-  transition: background-size 0.5s;
-}
-header .bg .carousel-inner .bg_2 {
-  background-image: url(../img/home.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-}
-header .bg .carousel-inner .bg_3 {
-  background-image: url(../img/home.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-}
-header .bg .carousel-inner .bg_4 {
-  background-image: url(../img/home.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-}
-header .bg .carousel-inner .bg_5 {
-  background-image: url(../img/home.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
 }
 header h3 {
   font-weight: 500;
@@ -423,6 +416,9 @@ header .profile {
 header .profile .img {
   height: 500px;
   width: 50%;
+}
+header .fw500 {
+  font-weight: 500;
 }
 
 nav {

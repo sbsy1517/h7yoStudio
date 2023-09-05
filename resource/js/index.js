@@ -32,7 +32,39 @@ window.addEventListener('load', function() {
     }, 1000);
 });
 
-// window.addEventListener('scroll', function() {
+
+// var carousel1 = new bootstrap.Carousel(document.getElementById('bgCarousel1'));
+// var carousel2 = new bootstrap.Carousel(document.getElementById('bgCarousel2'));
+
+// var isHovered = false;
+
+// // 滑鼠進入 Carousel 區域
+// function handleMouseEnter() {
+//     isHovered = true;
+//     if (!carousel1._isPaused) {
+//         carousel1.pause();
+//     }
+//     if (!carousel2._isPaused) {
+//         carousel2.pause();
+//     }
+// }
+
+// // 滑鼠離開 Carousel 區域
+// function handleMouseLeave() {
+//     isHovered = false;
+//     if (!carousel1._isPaused) {
+//         carousel1.cycle();
+//     }
+//     if (!carousel2._isPaused) {
+//         carousel2.cycle();
+//     }
+// }
+
+// // 綁定事件處理程序
+// document.getElementById('bgCarousel1').addEventListener('mouseenter', handleMouseEnter);
+// document.getElementById('bgCarousel1').addEventListener('mouseleave', handleMouseLeave);
+// document.getElementById('bgCarousel2').addEventListener('mouseenter', handleMouseEnter);
+// document.getElementById('bgCarousel2').addEventListener('mouseleave', handleMouseLeave);
 //     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 //     var windowHeight = window.innerHeight;
 //     var background = document.getElementById('home_bg');

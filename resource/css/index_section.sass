@@ -9,69 +9,87 @@ body
 
 header
     position: relative
-    .bg
-        .carousel-inner
-            .title
-                font-family: $font-familyJP, sans-serif
-                // font-weight: 900
-                position: absolute
-                font-size: 50px
-                z-index: 2
-                +x-center
-                +y-center
-                h1
-                    font-weight: bold
-                    margin-top: 20px
-                    letter-spacing: 2pt
-                h1,p
-                    margin: 20px 0
-                p
-                    
-            .button
-                width: 200px
-                height: 50px    
-                border: 1px solid #000
-                display: flex
-                justify-content: center
-                align-items: center
-                text-decoration: none
-                color: #000
-                p
-                    font-size: 20px
-                &:hover
-                    background: black
-                    p
-                        color: white
-
-            .bg_1
-                background-image: url(../img/home.jpg)
+    display: flex
+    
+    .bg_1
+                background-image: url(../img/home3.jpg)
                 background-size: cover
-                background-position: bottom center
+                background-position: bottom left
                 height: 100vh
-                width: 100%
+                width: 50%
                 background-repeat: no-repeat
                 transition: background-size 0.5s
+    .bg
+        height: 100vh
+        width: 50%
+        // background-color: grey
+        h1
+            font-weight: bold
 
-            .bg_2
-                background-image: url(../img/home.jpg)
-                background-size: cover
-                background-position: center center
-                height: 100vh
-            .bg_3
-                background-image: url(../img/home.jpg)
-                background-size: cover
-                background-position: center center
-                height: 100vh
-            .bg_4
-                background-image: url(../img/home.jpg)
-                background-size: cover
-                background-position: center center
-                height: 100vh
-            .bg_5
-                background-image: url(../img/home.jpg)
-                background-size: cover
-                background-position: center center
-                height: 100vh
+            margin-top: 20px
+            letter-spacing: 2pt
+        h1,p,h2
+            margin: 20px 0
+            font-size: 50px
+        .wrap
+            +y-center
+            margin-left: 10%
+            
+            .card
+                width: auto
+                background-color: none
+                border: none
+                .carousel-inner
+                    
+                    
+                    font-family: lineEN, sans-serif, $font-familyJP, sans-serif
+                    font-weight: 500
+                    // position: absolute
+                    img
+                        height: 100px
+                        padding-top: 20px
+                        padding-bottom: 10px
+                    .button
+                        width: 200px
+                        height: 50px    
+                        border: 1px solid #000
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        text-decoration: none
+                        color: #000
+                        margin-top: 50px
+                        p
+                            font-size: 20px
+                        &:hover
+                            background: black
+                            p
+                                color: white    
+            // .work-btn
+                // z-index: 5
+                
+
+            
+            // .bg_2
+            //     background-image: url(../img/home.jpg)
+            //     background-size: cover
+            //     background-position: center center
+            //     height: 100vh
+            // .bg_3
+            //     background-image: url(../img/home.jpg)
+            //     background-size: cover
+            //     background-position: center center
+            //     height: 100vh
+            // .bg_4
+            //     background-image: url(../img/home.jpg)
+            //     background-size: cover
+            //     background-position: center center
+            //     height: 100vh
+            // .bg_5
+            //     background-image: url(../img/home.jpg)
+            //     background-size: cover
+            //     background-position: center center
+            //     height: 100vh
 
     h3 
         font-weight: 500
@@ -98,6 +116,9 @@ header
             
             height: 500px
             width: 50%
+    .fw500
+        font-weight: 500
+
 
 
 
