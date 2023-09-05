@@ -32,14 +32,13 @@ html(lang="en")
         include components/nav_index.pug
         
                 
-        header 
-            .bg_1
-            .bg 
-                .wrap
-                    p.fw500 Hi! 
-                    p 我是
-
-                    .card#bgCarousel1.carousel.slide(data-bs-ride='carousel' data-bs-interval="3000" data-bs-pause="false")
+        header
+            .d-flex
+                .wrap_undersm
+                    .bg_title
+                        p Hi!
+                        p 我是
+                    .card#bgCarousel1.carousel.slide.undersm(data-bs-ride='carousel' data-bs-interval="3500" data-bs-pause="false")
                         .carousel-inner
                             .carousel-item.active.title
                                 img(src="resource/img/logo/h7.png", alt="")
@@ -73,6 +72,47 @@ html(lang="en")
                                 p photographer
                                 a(href="pages/work_photo.html").button#web_designer 
                                     p 觀看作品
+                .bg_1
+
+                .bg.oversm
+                    .wrap
+                        p.fw500 Hi! 
+                        p 我是
+
+                        .card#bgCarousel1.carousel.slide(data-bs-ride='carousel' data-bs-interval="3500" data-bs-pause="false")
+                            .carousel-inner
+                                .carousel-item.active.title
+                                    img(src="resource/img/logo/h7.png", alt="")
+                                    h1 黃啟祐
+                                    p huang_chiyou
+                                    
+                                    a(href="pages/about.html").button#web_designer 
+                                        p 關於我
+                                    
+                                .carousel-item.title
+                                    img(src="resource/img/logo/st.png", alt="")
+                                    h2 網頁設計師
+                                    p web_designer
+                                    a(href="pages/work_website.html").button#web_designer 
+                                        p 觀看作品
+                                .carousel-item.title
+                                    img(src="resource/img/logo/hc.png", alt="")
+                                    h2 平面設計師
+                                    p graphic_designer
+                                    a(href="pages/work_graphic.html").button#web_designer 
+                                        p 觀看作品
+                                .carousel-item.title
+                                    img(src="resource/img/logo/vd.png", alt="")
+                                    h2 影音剪輯師
+                                    p video_editor
+                                    a(href="pages/work_video.html").button#web_designer 
+                                        p 觀看作品
+                                .carousel-item.title
+                                    img(src="resource/img/logo/ht.png", alt="")
+                                    h2 攝影師
+                                    p photographer
+                                    a(href="pages/work_photo.html").button#web_designer 
+                                        p 觀看作品
                     //- .work-btn.carousel#bgCarousel2(data-bs-ride='carousel')
                     //-     .carousel-inner 
                     //-         .carousel-item.active
@@ -96,6 +136,7 @@ html(lang="en")
                     //-             a(href="pages/work_photo.html").button#web_designer 
                     //-                 p 觀看作品
 
+            
 
             //- h3
                 a(href="mailto:h7yostudio@gmail.com") h7yostudio@gmail.com

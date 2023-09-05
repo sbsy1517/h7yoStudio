@@ -3,54 +3,124 @@ div
 body
     // height: 2000px
     font-family: 'lineEN','lineJP','oto Sans TC','Helvetica', sans-serif
-
+    
         
 @import "loading.sass"
 
 header
     position: relative
-    display: flex
-    
-    .bg_1
-                background-image: url(../img/home3.jpg)
-                background-size: cover
-                background-position: bottom left
-                height: 100vh
-                width: 50%
-                background-repeat: no-repeat
-                transition: background-size 0.5s
-    .bg
-        height: 100vh
-        width: 50%
-        // background-color: grey
-        h1
-            font-weight: bold
+    min-height: 500px
+    .d-flex
+        flex-direction: row
+        .bg
+            height: 100vh
+            width: 50%
+            min-height: 400px
+            h1
+                font-weight: bold
 
-            margin-top: 20px
-            letter-spacing: 2pt
-        h1,p,h2
-            margin: 20px 0
-            font-size: 50px
-        .wrap
-            +y-center
-            margin-left: 10%
-            
-            .card
-                width: auto
-                background-color: none
+                margin-top: 20px
+                letter-spacing: 2pt
+            h1,p,h2
+                margin: 20px 0
+                font-size: 50px
+                +xl-less
+                    font-size: 40px
+                +md
+                    font-size: 35px
+                +sm
+                    font-size: 25px
+            .wrap
+                +y-center
+                margin-left: 10%
+                +sm
+                    margin-left: 0
+                .card
+                    width: auto
+                    background-color: transparent
+                    border: none
+                    .carousel-inner
+                        
+                        
+                        font-family: lineEN, sans-serif, $font-familyJP, sans-serif
+                        font-weight: 500
+                        img
+                            height: 100px
+                            padding-top: 20px
+                            padding-bottom: 10px
+                            +xl-less
+                                padding-top: 15px
+                                height: 90px
+                            +md
+                                height: 80px
+                                padding-top: 10px
+                            +sm
+                                height: 60px
+                        .button
+                            width: 200px
+                            height: 50px    
+                            border: 1px solid #000
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            text-decoration: none
+                            color: #000
+                            margin-top: 50px
+                            +xl-less
+                                margin-top: 35px
+                            p
+                                font-size: 20px
+                            &:hover
+                                background: black
+                                p
+                                    color: white   
+        .bg_1
+            background-image: url(../img/home3.jpg)
+            background-size: cover
+            background-position: bottom center
+            height: 100vh
+            width: 50%
+            background-repeat: no-repeat
+            transition: background-size 0.5s
+            +sm
+                width:100%
+                background-image: url(../img/home4.jpg)
+                background-position: bottom left
+                height: 500px
+        .wrap_undersm
+            margin-top: 100px
+            display: flex
+            align-items: center
+            .bg_title
+                width: 50%
+                heigth: 300px
+                p
+                    font-weight: 500
+            .card.undersm
+                // margin-top: 100px
+                width: 50%
+                background-color: transparent
                 border: none
                 .carousel-inner
                     
                     
                     font-family: lineEN, sans-serif, $font-familyJP, sans-serif
                     font-weight: 500
-                    // position: absolute
+                    
                     img
                         height: 100px
                         padding-top: 20px
                         padding-bottom: 10px
+                        +xl-less
+                            padding-top: 15px
+                            height: 90px
+                        +md
+                            height: 80px
+                            padding-top: 10px
+                        +sm
+                            height: 60px
                     .button
-                        width: 200px
+                        width: 100px
                         height: 50px    
                         border: 1px solid #000
                         display: flex
@@ -59,67 +129,75 @@ header
                         text-decoration: none
                         color: #000
                         margin-top: 50px
+                        +xl-less
+                            margin-top: 35px
                         p
                             font-size: 20px
                         &:hover
                             background: black
                             p
-                                color: white    
-            // .work-btn
-                // z-index: 5
+                                color: white  
+
+                // .work-btn
+                    // z-index: 5
+                    
+
                 
+                // .bg_2
+                //     background-image: url(../img/home.jpg)
+                //     background-size: cover
+                //     background-position: center center
+                //     height: 100vh
+                // .bg_3
+                //     background-image: url(../img/home.jpg)
+                //     background-size: cover
+                //     background-position: center center
+                //     height: 100vh
+                // .bg_4
+                //     background-image: url(../img/home.jpg)
+                //     background-size: cover
+                //     background-position: center center
+                //     height: 100vh
+                // .bg_5
+                //     background-image: url(../img/home.jpg)
+                //     background-size: cover
+                //     background-position: center center
+                //     height: 100vh
+        
+        +sm
+            flex-direction: column
+        h3 
+            font-weight: 500
+            position: absolute
+            bottom: 30px
+            right: 80px
+            a
+                text-decoration: none
+                color: #000
+                &:hover
+                    color: #5e5e5e
 
-            
-            // .bg_2
-            //     background-image: url(../img/home.jpg)
-            //     background-size: cover
-            //     background-position: center center
-            //     height: 100vh
-            // .bg_3
-            //     background-image: url(../img/home.jpg)
-            //     background-size: cover
-            //     background-position: center center
-            //     height: 100vh
-            // .bg_4
-            //     background-image: url(../img/home.jpg)
-            //     background-size: cover
-            //     background-position: center center
-            //     height: 100vh
-            // .bg_5
-            //     background-image: url(../img/home.jpg)
-            //     background-size: cover
-            //     background-position: center center
-            //     height: 100vh
+        .profile    
+            position: absolute
+            top: 30%
+            display: flex
+            justify-content: center
+            width: 80%
+            +x-center
 
-    h3 
-        font-weight: 500
-        position: absolute
-        bottom: 30px
-        right: 80px
-        a
-            text-decoration: none
-            color: #000
-            &:hover
-                color: #5e5e5e
+            .intro    
+                
+            .img
+                
+                height: 500px
+                width: 50%
+        .fw500
+            font-weight: 500
 
-    .profile    
-        position: absolute
-        top: 30%
-        display: flex
-        justify-content: center
-        width: 80%
-        +x-center
-
-        .intro    
-            
-        .img
-            
-            height: 500px
-            width: 50%
-    .fw500
-        font-weight: 500
-
-
+    .undersm
+        display: none
+        +sm
+            display: block
 
 
 
