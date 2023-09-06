@@ -511,6 +511,7 @@ header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h1, 
 }
 header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h1, header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h2 {
   margin-bottom: 15px;
+  font-weight: 700;
 }
 header .d-flex .wrap_undersm .card .carousel-inner .wrap_out img {
   padding-top: 20px;
