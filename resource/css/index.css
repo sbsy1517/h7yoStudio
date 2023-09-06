@@ -451,7 +451,8 @@ header .d-flex .wrap_undersm {
   z-index: 5;
   width: 100%;
   top: 150px;
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 10px;
 }
 @media (max-width: 414px) {
   header .d-flex .wrap_undersm {
@@ -514,12 +515,11 @@ header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h1, 
 header .d-flex .wrap_undersm .card .carousel-inner .wrap_out img {
   padding-top: 20px;
   padding-bottom: 10px;
-  height: 85px;
+  height: 80px;
   padding-left: 20px;
 }
 @media (max-width: 414px) {
   header .d-flex .wrap_undersm .card .carousel-inner .wrap_out img {
-    height: 80px;
     padding-left: 0;
     margin-bottom: 10px;
     padding-top: 0;
@@ -541,7 +541,6 @@ header .d-flex .wrap_undersm .card .carousel-inner .button {
   text-decoration: none;
   color: #000;
   margin-top: 50px;
-  background-color: #fff;
 }
 @media (max-width: 1200px) {
   header .d-flex .wrap_undersm .card .carousel-inner .button {
