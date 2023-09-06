@@ -3,7 +3,7 @@ div
 body
     // height: 2000px
     font-family: 'lineEN','lineJP','oto Sans TC','Helvetica', sans-serif
-    
+    min-width: 280px
         
 @import "loading.sass"
 
@@ -85,20 +85,32 @@ header
             +sm
                 width:100%
                 background-image: url(../img/home4.jpg)
-                background-position: bottom left
-                height: 500px
+                background-position: bottom 20%
+                max-height: 1920px
+
+                // height: 500px
         .wrap_undersm
-            margin-top: 100px
-            display: flex
+            // margin-top: 100px
             align-items: center
+            position: absolute
+            z-index: 5
+            width: 100%
+            top: 150px
+            padding: 0 30px
+            +xm
+                top: 120px
             .bg_title
-                width: 50%
-                heigth: 300px
+                // width: 30%
+                // heigth: 300px
+                margin-bottom: 10px
                 p
                     font-weight: 500
-            .card.undersm
+                    font-size: 30px
+                    line-height: 1.5
+                    letter-spacing: 2px
+            .card
                 // margin-top: 100px
-                width: 50%
+                // width: 70%
                 background-color: transparent
                 border: none
                 .carousel-inner
@@ -106,19 +118,38 @@ header
                     
                     font-family: lineEN, sans-serif, $font-familyJP, sans-serif
                     font-weight: 500
-                    
-                    img
-                        height: 100px
-                        padding-top: 20px
-                        padding-bottom: 10px
-                        +xl-less
-                            padding-top: 15px
+                    .wrap_out
+                        width: 100% 
+                        display: flex
+                        align-items: center
+                        // justify-content: space-between
+                        +xm
+                            flex-direction: column-reverse
+                            align-items: start
+                        .wrap_position
+                            // width: 50%
+                            +xm
+                                width: 100%
+                            h1,p,h2
+                                font-size: 30px
+                                +ip5
+                                    font-size: 25px
+                            h1,h2
+                                margin-bottom: 15px
+                        img
+                            // height: 100px
+                            padding-top: 20px
+                            padding-bottom: 10px
                             height: 90px
-                        +md
-                            height: 80px
-                            padding-top: 10px
-                        +sm
-                            height: 60px
+                            // margin-left: 50px
+                            padding-left: 20px
+                            +xm
+                                height: 80px
+                                // margin-left: 0
+                                padding-left: 0
+                                margin-bottom: 10px
+                                padding-top: 0
+                    
                     .button
                         width: 100px
                         height: 50px    
@@ -129,6 +160,7 @@ header
                         text-decoration: none
                         color: #000
                         margin-top: 50px
+                        background-color: #fff
                         +xl-less
                             margin-top: 35px
                         p
@@ -194,171 +226,9 @@ header
         .fw500
             font-weight: 500
 
-    .undersm
-        display: none
-        +sm
-            display: block
+.wrap_undersm
+    display: none
+    +sm
+        display: block
 
 
-
-// section#work
-//     position: relative
-//     .bg
-//         .carousel-inner
-//             .title
-//                 position: absolute
-//                 font-size: 50px
-//                 z-index: 2
-//                 +x-center
-//                 +y-center
-//                 h1
-//                     font-weight: bold
-//                     margin-top: 20px
-//                     letter-spacing: 2pt
-//                 h1,p
-//                     margin: 20px 0
-//                 p
-                    
-//             .button
-//                 width: 200px
-//                 height: 50px    
-//                 border: 1px solid #000
-//                 display: flex
-//                 justify-content: center
-//                 align-items: center
-//                 text-decoration: none
-//                 color: #000
-//                 p
-//                     font-size: 20px
-//                 &:hover
-//                     background: black
-//                     p
-//                         color: white
-
-//             .bg_1
-//                 background-image: url(../img/home.jpg)
-//                 background-size: cover
-//                 background-position: bottom center
-//                 height: 80vh
-//                 width: 100%
-//                 background-repeat: no-repeat
-//                 transition: background-size 0.5s
-
-//             .bg_2
-//                 background-image: url(../img/home.jpg)
-//                 background-size: cover
-//                 background-position: center center
-//                 height: 80vh
-//             .bg_3
-//                 background-image: url(../img/home.jpg)
-//                 background-size: cover
-//                 background-position: center center
-//                 height: 80vh
-//             .bg_4
-//                 background-image: url(../img/home.jpg)
-//                 background-size: cover
-//                 background-position: center center
-//                 height: 80vh
-//             .bg_5
-//                 background-image: url(../img/home.jpg)
-//                 background-size: cover
-//                 background-position: center center
-//                 height: 80vh
-    
-//     .boxxx
-//         .d-flex
-//             .wrap
-//                 width: 50%
-//                 position: relative
-//                 .title
-//                     position: absolute
-//                     top: 50px
-//                     left: 80px
-//                     z-index: 2
-//                     color: white
-//                     font-size: 60px
-//                     font-weight: 500
-//                 .website
-//                     .carousel-item
-//                         background-color: #8edac5
-//                         height: 500px
-                    
-//                     #website2
-//                         background-color: #868686
-//                     #website3
-//                         background-color: #242424
-
-//                 .graphic
-//                     .carousel-item
-//                         background-color: #4cc1a0
-//                         height: 500px
-//                     #graphic2
-//                         background-color: #77c1c2
-//                     #graphic3
-//                         background-color: #9692e0
-//                 .video
-//                     .carousel-item
-//                         background-color: #b1e0d3
-//                         height: 500px
-//                     #video2
-//                         background-color: #99a4e8
-//                     #video3
-//                         background-color: #49c7dd
-
-//                 .photo
-//                     .carousel-item
-//                         background-color: #8fd292
-//                         height: 500px
-//                     #photo2
-//                         background-color: #6aa977
-//                     #photo3
-//                         background-color: #c0de8e
-
-        // .row
-        //     position: relative
-        //     display: flex
-        //     flex-wrap: wrap
-        //     h2
-        //         position: absolute
-        //         top: 0
-        //         left: 0
-        //         z-index: 3
-        //         font-weight: 500
-        //     .carousel
-
-        //     .website
-        //         .carousel-item
-        //             background-color: #8edac5
-        //             height: 500px
-                    
-        //         #website2
-        //             background-color: #868686
-        //         #website3
-        //             background-color: #242424
-
-        //     .graphic
-        //         .carousel-item
-        //             background-color: #4cc1a0
-        //             height: 500px
-        //         #graphic2
-        //             background-color: #77c1c2
-        //         #graphic3
-        //             background-color: #9692e0
-            
-        //     .video
-        //         .carousel-item
-        //             background-color: #b1e0d3
-        //             height: 500px
-        //         #video2
-        //             background-color: #99a4e8
-        //         #video3
-        //             background-color: #49c7dd
-
-        //     .photo
-        //         .carousel-item
-        //             background-color: #8fd292
-        //             height: 500px
-        //         #photo2
-        //             background-color: #6aa977
-        //         #photo3
-        //             background-color: #c0de8e

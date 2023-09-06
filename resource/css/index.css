@@ -183,6 +183,7 @@ html, body {
 
 body {
   font-family: "lineEN", "lineJP", "oto Sans TC", "Helvetica", sans-serif;
+  min-width: 280px;
 }
 
 @keyframes slide {
@@ -438,12 +439,44 @@ header .d-flex .bg_1 {
   header .d-flex .bg_1 {
     width: 100%;
     background-image: url(../img/home4.jpg);
-    background-position: bottom left;
-    height: 500px;
+    background-position: bottom 20%;
+    max-height: 1920px;
   }
 }
 header .d-flex .wrap_undersm {
-  margin-top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  top: 150px;
+  padding: 0 30px;
+}
+@media (max-width: 414px) {
+  header .d-flex .wrap_undersm {
+    top: 120px;
+  }
+}
+header .d-flex .wrap_undersm .bg_title {
+  margin-bottom: 10px;
+}
+header .d-flex .wrap_undersm .bg_title p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+header .d-flex .wrap_undersm .card {
+  background-color: transparent;
+  border: none;
+}
+header .d-flex .wrap_undersm .card .carousel-inner {
+  font-family: lineEN, sans-serif, "lineJP", sans-serif;
+  font-weight: 500;
+}
+header .d-flex .wrap_undersm .card .carousel-inner .wrap_out {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,45 +484,48 @@ header .d-flex .wrap_undersm {
       -ms-flex-align: center;
           align-items: center;
 }
-header .d-flex .wrap_undersm .bg_title {
-  width: 50%;
-  heigth: 300px;
+@media (max-width: 414px) {
+  header .d-flex .wrap_undersm .card .carousel-inner .wrap_out {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
-header .d-flex .wrap_undersm .bg_title p {
-  font-weight: 500;
+@media (max-width: 414px) {
+  header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position {
+    width: 100%;
+  }
 }
-header .d-flex .wrap_undersm .card.undersm {
-  width: 50%;
-  background-color: transparent;
-  border: none;
+header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h1, header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position p, header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h2 {
+  font-size: 30px;
 }
-header .d-flex .wrap_undersm .card.undersm .carousel-inner {
-  font-family: lineEN, sans-serif, "lineJP", sans-serif;
-  font-weight: 500;
+@media (max-width: 374px) {
+  header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h1, header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position p, header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h2 {
+    font-size: 25px;
+  }
 }
-header .d-flex .wrap_undersm .card.undersm .carousel-inner img {
-  height: 100px;
+header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h1, header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h2 {
+  margin-bottom: 15px;
+}
+header .d-flex .wrap_undersm .card .carousel-inner .wrap_out img {
   padding-top: 20px;
   padding-bottom: 10px;
+  height: 90px;
+  padding-left: 20px;
 }
-@media (max-width: 1200px) {
-  header .d-flex .wrap_undersm .card.undersm .carousel-inner img {
-    padding-top: 15px;
-    height: 90px;
-  }
-}
-@media (max-width: 768px) {
-  header .d-flex .wrap_undersm .card.undersm .carousel-inner img {
+@media (max-width: 414px) {
+  header .d-flex .wrap_undersm .card .carousel-inner .wrap_out img {
     height: 80px;
-    padding-top: 10px;
+    padding-left: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
   }
 }
-@media (max-width: 576px) {
-  header .d-flex .wrap_undersm .card.undersm .carousel-inner img {
-    height: 60px;
-  }
-}
-header .d-flex .wrap_undersm .card.undersm .carousel-inner .button {
+header .d-flex .wrap_undersm .card .carousel-inner .button {
   width: 100px;
   height: 50px;
   border: 1px solid #000;
@@ -505,19 +541,20 @@ header .d-flex .wrap_undersm .card.undersm .carousel-inner .button {
   text-decoration: none;
   color: #000;
   margin-top: 50px;
+  background-color: #fff;
 }
 @media (max-width: 1200px) {
-  header .d-flex .wrap_undersm .card.undersm .carousel-inner .button {
+  header .d-flex .wrap_undersm .card .carousel-inner .button {
     margin-top: 35px;
   }
 }
-header .d-flex .wrap_undersm .card.undersm .carousel-inner .button p {
+header .d-flex .wrap_undersm .card .carousel-inner .button p {
   font-size: 20px;
 }
-header .d-flex .wrap_undersm .card.undersm .carousel-inner .button:hover {
+header .d-flex .wrap_undersm .card .carousel-inner .button:hover {
   background: black;
 }
-header .d-flex .wrap_undersm .card.undersm .carousel-inner .button:hover p {
+header .d-flex .wrap_undersm .card .carousel-inner .button:hover p {
   color: white;
 }
 @media (max-width: 576px) {
@@ -562,11 +599,12 @@ header .d-flex .profile .img {
 header .d-flex .fw500 {
   font-weight: 500;
 }
-header .undersm {
+
+.wrap_undersm {
   display: none;
 }
 @media (max-width: 576px) {
-  header .undersm {
+  .wrap_undersm {
     display: block;
   }
 }

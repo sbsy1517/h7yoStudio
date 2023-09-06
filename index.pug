@@ -38,38 +38,53 @@ html(lang="en")
                     .bg_title
                         p Hi!
                         p 我是
-                    .card#bgCarousel1.carousel.slide.undersm(data-bs-ride='carousel' data-bs-interval="3500" data-bs-pause="false")
+                    .card#bgCarousel1.carousel.slide(data-bs-ride='carousel' data-bs-interval="3500" data-bs-pause="false")
                         .carousel-inner
                             .carousel-item.active.title
-                                img(src="resource/img/logo/h7.png", alt="")
-                                h1 黃啟祐
-                                p huang_chiyou
+                                .wrap_out
+                                    .wrap_position
+                                        h1 黃啟祐
+                                        p huang_chiyou
+                                    img(src="resource/img/logo/h7.png", alt="")
+                                    
                                 
                                 a(href="pages/about.html").button#web_designer 
                                     p 關於我
                                 
                             .carousel-item.title
-                                img(src="resource/img/logo/st.png", alt="")
-                                h2 網頁設計師
-                                p web_designer
+                                
+                                .wrap_out
+                                    .wrap_position
+                                        h2 網頁設計師
+                                        p web_designer
+                                    img(src="resource/img/logo/st.png", alt="")
                                 a(href="pages/work_website.html").button#web_designer 
                                     p 觀看作品
                             .carousel-item.title
-                                img(src="resource/img/logo/hc.png", alt="")
-                                h2 平面設計師
-                                p graphic_designer
+                                .wrap_out
+                                    
+                                    .wrap_position
+                                        h2 平面設計師
+                                        p graphic_designer
+                                    img(src="resource/img/logo/hc.png", alt="")
                                 a(href="pages/work_graphic.html").button#web_designer 
                                     p 觀看作品
                             .carousel-item.title
-                                img(src="resource/img/logo/vd.png", alt="")
-                                h2 影音剪輯師
-                                p video_editor
+                                .wrap_out
+                                
+                                    .wrap_position
+                                        h2 影音剪輯師
+                                        p video_editor
+                                    img(src="resource/img/logo/vd.png", alt="")
                                 a(href="pages/work_video.html").button#web_designer 
                                     p 觀看作品
                             .carousel-item.title
-                                img(src="resource/img/logo/ht.png", alt="")
-                                h2 攝影師
-                                p photographer
+                                .wrap_out
+                                
+                                    .wrap_position
+                                        h2 攝影師
+                                        p photographer
+                                    img(src="resource/img/logo/ht.png", alt="")
                                 a(href="pages/work_photo.html").button#web_designer 
                                     p 觀看作品
                 .bg_1
