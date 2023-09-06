@@ -514,7 +514,7 @@ header .d-flex .wrap_undersm .card .carousel-inner .wrap_out .wrap_position h1, 
 header .d-flex .wrap_undersm .card .carousel-inner .wrap_out img {
   padding-top: 20px;
   padding-bottom: 10px;
-  height: 90px;
+  height: 85px;
   padding-left: 20px;
 }
 @media (max-width: 414px) {
