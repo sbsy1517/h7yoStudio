@@ -1442,3 +1442,7 @@ section .resume .about_icon .d-flex .adobe {
     width: 50px;
   }
 }
+
+.fw-500 {
+  font-weight: 500;
+}
