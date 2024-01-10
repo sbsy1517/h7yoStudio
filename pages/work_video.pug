@@ -13,7 +13,7 @@ html(lang="en")
     
     meta(name="twitter:image" content="../resource/img/logo/line.jpg")
     link(rel="stylesheet", href="../resource/css/work.css")
-    title h_7yo stud_o
+    title Video
     body.disable-scroll#work_video
         include ../components/loading.pug
         include ../components/nav.pug  
@@ -226,7 +226,43 @@ html(lang="en")
                         
                                 .video
                                     iframe.yt(src="https://youtube.com/embed/z-2xBkJt8Mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            .block#twelve_img(data-bs-toggle="modal" data-bs-target="#block12")
+                .img
+                    
+                .title 無印良品懶骨頭影片
+                img(src="../resource/img/white.svg", alt="").more_undermd.white
+                .intro 
+                    p 影片主要以情境劇，傳達無印良品懶骨頭系列產品的使用情境，並在無印良品各店影片播放展示。
+                        br
+                        |此片主要負責演飾使用在懶骨頭工作角色。
+                        
+                    img(src="../resource/img/more.svg", alt="").more 
+                
+                
             
+            .modal.fade#block12(tabindex="-1" aria-labelledby="one" aria-hidden="true")
+                .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+                    .modal-content
+                        .modal-header
+                            button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+                                svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+                                    g#crossIcon_g
+                                        path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+                                        path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+                        .modal-body
+                            .wraper
+                                h3 無印良品懶骨頭影片
+                                p 影片主要以情境劇，傳達無印良品懶骨頭系列產品的使用情境，並在無印良品各店影片播放展示。
+                                    br
+                                    |此片主要負責演飾使用在懶骨頭工作角色。
+                        
+                                .video
+                                    iframe.yt(src="https://www.youtube.com/embed/heM4Q7eDLxA?si=M0-CFRWNFOmYF-m_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+                                .w-100
+
+
+
             .block#nine_img(data-bs-toggle="modal" data-bs-target="#block9")
                 .img
                     
