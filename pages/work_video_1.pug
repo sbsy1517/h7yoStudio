@@ -1,0 +1,483 @@
+doctype html
+html(lang="en")
+    include ../components/meta.pug
+    meta(property="og:title" content="h_7yo stud_o")
+    meta(property="og:description" content="h_7yo 黃啟祐作品集") 
+    meta(property="og:type" content="website" ) 
+    meta(property="og:url" content="https://sbsy1517.github.io/h7yoStudio/" ) 
+    meta(property="og:image" content="../resource/img/logo/line.jpg")  
+    
+    meta(name="twitter:title" content="h_7yo stud_o")
+    meta(name="twitter:description" content="h_7yo 黃啟祐作品集")
+    meta(name="twitter:url" content="https://sbsy1517.github.io/h7yoStudio/")
+    
+    meta(name="twitter:image" content="../resource/img/logo/line.jpg")
+    link(rel="stylesheet", href="../resource/css/work.css")
+    title Video
+    body.disable-scroll#work_video
+        include ../components/loading.pug
+        include ../components/nav.pug  
+
+        header 
+            a(href="work.html").back_btn
+                svg#backicon(xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 763.34 606.76')
+                    g#backicon_g
+                        path.cls-1(d='m13.08,322.55l722.17,282.77c13.5,5.29,28.09-4.67,28.09-19.17V20.61c0-14.5-14.59-24.46-28.09-19.17L13.08,284.21c-17.44,6.83-17.44,31.51,0,38.34Z')
+
+                
+                .title_back back
+            .title v_deo
+            
+        section
+            .block#one_img(data-bs-toggle="modal" data-bs-target="#block1")
+                //- .img
+                .video
+                    iframe.yt(src="https://drive.google.com/file/d/1zVTJj8FFbasKZtWPyEpxP2vUuRoOozV6/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)    
+                .title 2022.09 LANYU VLOG
+                img(src="../resource/img/white.svg", alt="").more_undermd.white
+                .intro 
+                    p 去蘭嶼時腦裡浮出的音樂是Radwimps的セプテンバーさん(9月小姐)剛好去的時候也是9月，就用這首剪了這支VLOG
+                
+                    img(src="../resource/img/more.svg", alt="").more 
+            
+            .modal
+                
+                .modal-body
+                    .wraper
+                        h3 2022.09 LANYU VLOG
+                        p 去蘭嶼時腦裡浮出的音樂是Radwimps的セプテンバーさん(9月小姐)剛好去的時候也是9月，就用這首剪了這支VLOG
+                        .video
+                            iframe.yt(src="https://drive.google.com/file/d/1zVTJj8FFbasKZtWPyEpxP2vUuRoOozV6/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+
+            
+            //- .block#eight_img(data-bs-toggle="modal" data-bs-target="#block8")
+            //-     .img
+            //-     .title  2022.08 綠島 VLOG
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 2022年的八月去了一趟綠島，那時候剛接觸自由潛水沒多久，來了綠島之後深深愛上這片大海，並記錄了在島上的快樂。
+            //-         img(src="../resource/img/more.svg", alt="").more 
+            //- .modal.fade#block8(ytabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 2022.08 綠島 VLOG
+            //-                     p 2022年的八月去了一趟綠島，那時候剛接觸自由潛水沒多久，來了綠島之後深深愛上這片大海，並記錄了在島上的快樂。
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1CPUt2N_YULf57RtejMDzij5gmtUUpqys/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //- .block#two_img(data-bs-toggle="modal" data-bs-target="#block2")
+            //-     .img
+                    
+            //-     .title 第12回台灣微告總會
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 第12回的台灣微告總會影片。主題為：展望未來，疫情期間，大家即使受疫情的困擾，卻還是能共同努力成長，並期許新的一年可以超越過去的自已，展望更好的未來。
+            //-             br
+            //-             |主要負責影片全部(腳本、拍攝及剪輯)，其中預告為無腳本並在當天拍攝當天剪輯當晚發布
+                    
+            //-         img(src="../resource/img/more.svg", alt="").more 
+                
+            
+            //- .modal.fade#block2(tabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 第12回台灣微告總會
+            //-                     p 第12回的台灣微告總會影片。主題為：展望未來，疫情期間，大家即使受疫情的困擾，卻還是能共同努力成長，並期許新的一年可以超越過去的自已，展望更好的未來。
+            //-                         br
+            //-                         |主要負責影片全部(腳本、拍攝及剪輯)，其中預告為無腳本並在當天拍攝當天剪輯當晚發布
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1SgiHTLgNTkFC9mwfGUJjiLr56NCgu288/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1LsnUauFk_4qf-vPi-HXXxJtJ-5j1Utpv/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1QcG0KDK4_G7FbFTh1iaoQELlX_LHbSFt/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1CNE1fs3yq_LocbB_bfnlZj1CLTlFC0sW/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1jmEkDoNdW81cgaeQDBOlhIAC2clJWInK/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1g2PVPrv_hYc0OVCaAPhLbSRmvTP0xxLX/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1nhbTKD6TyGat3fUaF3phtcOzvXUsbyaY/preview"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .w-100
+            
+            //- .block#three_img(data-bs-toggle="modal" data-bs-target="#block3")
+            //-     .img
+                    
+            //-     .title 第11回台灣微告總會
+            //-     img(src="../resource/img/more.svg", alt="").more_undermd
+            //-     .intro 
+            //-         p 第11回的台灣微告總會影片，主要負責腳本、拍攝及剪輯。主題為：成長，公司9年來，從原本的4人，逐漸成長成60人的公司，這一路走來充滿了大家共同奮鬥的回憶。影片從大家上班的樣子，第一間辦公室到現在的辦公室，傳達公司的成長，最後由社長向大家說早安，展開有元氣的每一天。
+                
+            //-         img(src="../resource/img/more.svg", alt="").more 
+            
+            //- .modal.fade#block3(tabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 第11回台灣微告總會
+            //-                     p 第11回的台灣微告總會影片，主要負責腳本、拍攝及剪輯。主題為：成長，公司9年來，從原本的4人，逐漸成長成60人的公司，這一路走來充滿了大家共同奮鬥的回憶。影片從大家上班的樣子，第一間辦公室到現在的辦公室，傳達公司的成長，最後由社長向大家說早安，展開有元氣的每一天。
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1OwSyl81aXI01KA77GCyEZ8K7xMDNSXor/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+
+            //- .block#eleven_img(data-bs-toggle="modal" data-bs-target="#block11")
+            //-     .img
+                    
+            //-     .title SOU SOU
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p SOU SOU是個日本京都設計品牌，以「創造日本的新文化」為品牌概念，將京都織紋印花結合嶄新的設計，打造出融合傳統和風與現代時尚感的好設計。
+            //-             br
+            //-             |主要負責影片剪輯及設計製作
+            //-         img(src="../resource/img/more.svg", alt="").more    
+                    
+                
+                
+            
+            //- .modal.fade#block11(tabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 SOU SOU
+            //-                     p SOU SOU是個日本京都設計品牌，以「創造日本的新文化」為品牌概念，將京都織紋印花結合嶄新的設計，打造出融合傳統和風與現代時尚感的好設計。
+            //-                         br
+            //-                         |主要負責影片剪輯及設計製作
+                        
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1LtNa_CHZGlI7zAjSErxGLHAi9el_bVbq/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1JxhOy9hcMcp-6QIDRtNu_MkhiktLXuLD/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1pkRrq6Pe4ulLK7Y9hJM6ERCYACYexom8/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1LCMuLVmA05qDupnyNWgFSgQEfGsGFHoV/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1xGOzr0aOe2z0z47GV5G6trjjBYux7x5l/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .w-100
+
+            //- .block#ten_img(data-bs-toggle="modal" data-bs-target="#block10")
+            //-     .img
+                    
+            //-     .title MUJI台東店二階段開幕
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 此影片為手機廣告影片，無印台東店發表全台首部「MUJI無印良品移動服務車。移動服務車是以解決台東狹長地形、單家門市無法滿足所有需求的問題。
+            //-             br
+            //-             |此片主要負責剪輯。
+                        
+            //-         img(src="../resource/img/more.svg", alt="").more 
+                
+                
+            
+            //- .modal.fade#block10(tabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 MUJI台東店二階段開幕
+            //-                     p 此影片為手機廣告影片，無印台東店發表全台首部「MUJI無印良品移動服務車。移動服務車是以解決台東狹長地形、單家門市無法滿足所有需求的問題。
+            //-                         br
+            //-                         |此片主要負責剪輯。
+                        
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1lwEtXoFLOdxfvR1CU0p9mPqfccnBgQx8/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //- .block#twelve_img(data-bs-toggle="modal" data-bs-target="#block12")
+            //-     .img
+                    
+            //-     .title 無印良品懶骨頭影片
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 影片主要以情境劇，傳達無印良品懶骨頭系列產品的使用情境，並在無印良品各店影片播放展示。
+            //-             br
+            //-             |此片主要負責演飾使用在懶骨頭工作角色。
+                        
+            //-         img(src="../resource/img/more.svg", alt="").more 
+                
+                
+            
+            //- .modal.fade#block12(tabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 無印良品懶骨頭影片
+            //-                     p 影片主要以情境劇，傳達無印良品懶骨頭系列產品的使用情境，並在無印良品各店影片播放展示。
+            //-                         br
+            //-                         |此片主要負責演飾使用在懶骨頭工作角色。
+                        
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/13kyEcRi5nS09vfdjDt9XzrkKhRuePe-v/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .w-100
+
+
+
+            //- .block#nine_img(data-bs-toggle="modal" data-bs-target="#block9")
+            //-     .img
+                    
+            //-     .title 犀牛盾 
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 影片主要以情境劇，傳達生活中處處都有機會被他人偷窺手機/摔到手機/摔到手錶等，此時犀牛盾產品即可保護個人的隱私及手機手錶不受傷害。
+            //-             br
+            //-             |此片主要負責演飾各個生活情境的角色。
+                        
+            //-         img(src="../resource/img/more.svg", alt="").more 
+                
+                
+            
+            //- .modal.fade#block9(tabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 犀牛盾
+            //-                     p 影片主要以情境劇，傳達生活中處處都有機會被他人偷窺手機/摔到手機/摔到手錶等，此時犀牛盾產品即可保護個人的隱私及手機手錶不受傷害。
+            //-                         br
+            //-                         |此片主要負責演飾各個生活情境的角色。
+                        
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1mWq4Xy-OI18dPWoeRl_-XsKa78i8KUzO/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1tpap6MepQ4NT4z8Z3-AP6aYwHAHB4WX-/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1KIHbpTTQAizj7qK58wDAg-12nH42OZ-R/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            //-                     .w-100
+
+
+
+            //- .block#four_img(data-bs-toggle="modal" data-bs-target="#block4")
+            //-     .img
+                    
+            //-     .title Oribs米潤美源素
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 此影片為廣告影片，主要以開箱實測影片手法，介紹ORBIS米潤美源素一個月的測試。
+            //-             br
+            //-             |此片主要負責拍攝及剪輯。
+            //-         img(src="../resource/img/more.svg", alt="").more     
+                    
+                
+                
+            
+            //- .modal.fade#block4(tabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 Oribs米潤美源素
+            //-                     p 此影片為廣告影片，主要以開箱實測影片手法，介紹ORBIS米潤美源素一個月的測試。
+            //-                         br
+            //-                         |此片主要負責拍攝及剪輯。
+                        
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1Hp5R966bn9_7j4P5k7weLJvH3QD2LqXc/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+
+            //- .block#five_img(data-bs-toggle="modal" data-bs-target="#block5")
+            //-     .img#fv5
+            //-     .title  snova精華液
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 此影片為廣告影片，主要介紹商品的成分及使用方式，搭配不同角度度展現產品質地，最後介紹推廣品牌活動。
+            //-             br
+            //-             |此片主要負責拍攝及剪輯。
+            //-         img(src="../resource/img/more.svg", alt="").more 
+            //- .modal.fade#block5(ytabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 snova精華液
+            //-                     p 此影片為廣告影片，主要介紹商品的成分及使用方式，搭配不同角度度展現產品質地，最後介紹推廣品牌活動。
+            //-                         br
+            //-                         |此片主要負責拍攝及剪輯。
+                                
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1xn9T8dN40SBKHeKOyWwGl5zaVLIHpQM_/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+
+            //- .block#six_img(data-bs-toggle="modal" data-bs-target="#block6")
+            //-     .img
+            //-     .title  朵茉麗蔻
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 此影片為廣告影片，主要介紹試用商品組使用順序及方式，搭配不同角度度展現產品質地，並以素人自己體驗心得加強吸引觀影者購買慾望。
+            //-             br
+            //-             |此片主要負責拍攝。
+            //-         img(src="../resource/img/more.svg", alt="").more 
+            //- .modal.fade#block6(ytabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 朵茉麗蔻
+            //-                     p 此影片為廣告影片，主要介紹試用商品組使用順序及方式，搭配不同角度度展現產品質地，並以素人自己體驗心得加強吸引觀影者購買慾望。
+            //-                         br
+            //-                         |此片主要負責拍攝。 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1Bxud5zlqqq1H1KN4R1esOL_oiPz5O27n/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+
+            //- .block#seven_img(data-bs-toggle="modal" data-bs-target="#block7")
+            //-     .img
+            //-     .title Uka麴酵素
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 此影片為廣告影片，主要介紹商品食用方式，內容包含傳達健康身材保養知識以加強商品公信力，搭配瑜伽老師講解，及自己體驗心得加強吸引觀影者購買慾望。
+            //-             br
+            //-             |此片主要負責拍攝及剪輯。 
+            //-         img(src="../resource/img/more.svg", alt="").more 
+            //- .modal.fade#block7(ytabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 uka麴酵素
+            //-                     p 此影片為廣告影片，主要介紹商品食用方式，內容包含傳達健康身材保養知識以加強商品公信力，搭配瑜伽老師講解，及自己體驗心得加強吸引觀影者購買慾望。
+            //-                         br
+            //-                         |此片主要負責拍攝及剪輯。 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1yIA0BRKy3qgjcxZessfXOKO5L0Jm60X3/preview"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+            
+
+            //- .block#thirteen_img(data-bs-toggle="modal" data-bs-target="#block13")
+            //-     .img
+            //-     .title Japaholic 嚕嚕米快閃店城堡模型介紹
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 此影片為Japaholic業配介紹，主要介紹嚕嚕米來台於華山快閃，並請KOL介紹來自日本的城堡模型
+            //-             br
+            //-             |此片主要負責拍攝及剪輯。 
+            //-         img(src="../resource/img/more.svg", alt="").more 
+            //- .modal.fade#block13(ytabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 Japaholic 嚕嚕米快閃店城堡模型介紹
+            //-                     p 此影片為Japaholic業配介紹，主要介紹嚕嚕米來台於華山快閃，並請KOL介紹來自日本的城堡模型
+            //-                         br
+            //-                         |此片主要負責拍攝及剪輯。 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1YvFbKwKnUAwvzhHlZYsst-TPw9gzLKOl/preview"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+                                
+
+            //- .block#fourteen_img(data-bs-toggle="modal" data-bs-target="#block14")
+            //-     .img
+            //-     .title Japaholic 日藥本舖影片
+            //-     img(src="../resource/img/white.svg", alt="").more_undermd.white
+            //-     .intro 
+            //-         p 此影片為Japaholic與日藥本舖合作，請KOL與日藥本舖的藥師介紹多項保健食品，並實際到日藥本舖店裡拍攝講解產品。影片在日藥本舖POS機螢幕播放
+            //-             br
+            //-             |此片主要負責拍攝及剪輯。 
+            //-         img(src="../resource/img/more.svg", alt="").more 
+            //- .modal.fade#block14(ytabindex="-1" aria-labelledby="one" aria-hidden="true")
+            //-     .modal-dialog.modal-fullscreen.modal-dialog-scrollable
+            //-         .modal-content
+            //-             .modal-header
+            //-                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+            //-                     svg#crossIcon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 421.44 421.44" style="enable-background:new 0 0 421.44 421.44;" xml:space="preserve")
+            //-                         g#crossIcon_g
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M5.66,5.66l410.12,410.12L5.66,5.66z")
+            //-                             path(style="fill:none;stroke:#231815;stroke-width:16;stroke-miterlimit:10;" d="M415.78,5.66L5.66,415.78L415.78,5.66z")
+
+            //-             .modal-body
+            //-                 .wraper
+            //-                     h3 Japaholic 日藥本舖影片
+            //-                     p 此影片為Japaholic與日藥本舖合作，請KOL與日藥本舖的藥師介紹多項保健食品，並實際到日藥本舖店裡拍攝講解產品。影片在日藥本舖POS機螢幕播放
+            //-                         br
+            //-                         |此片主要負責拍攝及剪輯。 
+            //-                     .video
+            //-                         iframe.yt(src="https://drive.google.com/file/d/1B2JHJ2ABWj5F3Dl8k3-pAVOHvalqwJoF/preview"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen) 
+
+
+            
+        include ../components/footer.pug
+        include ../components/script.pug
+

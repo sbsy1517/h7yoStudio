@@ -222,7 +222,7 @@ body.disable-scroll {
 .loading-screen img {
   position: absolute;
   width: 500px;
-  top: 35%;
+  top: 30%;
   left: 10%;
 }
 @media (max-width: 992px) {
@@ -276,7 +276,7 @@ body.disable-scroll {
   }
 }
 .loading-screen .intro p {
-  top: 60%;
+  top: 53%;
   left: -10%;
   width: 30000px;
   font-weight: 500;
@@ -288,6 +288,14 @@ body.disable-scroll {
   .loading-screen .intro p {
     top: 52%;
   }
+}
+.loading-screen .timeoutMessage {
+  position: absolute;
+  font-size: 50px;
+  letter-spacing: 10px;
+  font-weight: 500;
+  top: 75%;
+  left: 10.5%;
 }
 
 body#index .loading-screen img#indeximg {

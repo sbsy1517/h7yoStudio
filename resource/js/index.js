@@ -30,6 +30,11 @@ window.addEventListener('load', function() {
             body.classList.remove('disable-scroll');
       }, 500); // 或者您認為合適的時間
     }, 1000);
+    setTimeout(function() {
+        const timeoutMessage = document.createElement('timeoutMessage');
+        timeoutMessage.textContent = '載入網站似乎超出預期時間，請再稍等';
+        loadingScreen.appendChild(timeoutMessage);
+    }, 10000);
 });
 
 
