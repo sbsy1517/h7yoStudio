@@ -1020,6 +1020,20 @@ body#work_video .modal .modal-body .video .yt {
 body#work_video .modal .modal-body .w-100 {
   height: 100px;
 }
+body#work_video .video_child .block#one_img .video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 30px;
+}
+body#work_video .video_child .block#one_img .video .yt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 body#work_video #one_img .img {
   background-image: url(../img/video/1.jpg);
 }
@@ -1056,10 +1070,6 @@ body#work_video #eleven_img .img {
 body#work_video #twelve_img .img {
   background-image: url(../img/video/12.jpg);
 }
-body#work_video #thirteen_img .img {
-  background-image: url(../img/video/12.jpg);
-}
-
 body#work_photo #one_img .img {
   background-image: url(../img/photo/profile/1.jpg);
 }
