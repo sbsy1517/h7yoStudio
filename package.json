@@ -1,0 +1,17 @@
+{
+  "name": "h7yostudio-kyoto-guide",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild KyotoGuide.jsx --bundle --format=esm --jsx=automatic --outfile=dist/kyoto-guide.js --loader:.jsx=jsx",
+    "dev": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "lucide-react": "^0.428.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5"
+  }
+}

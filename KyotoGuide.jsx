@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import { createRoot } from "react-dom/client";
 import { MapPin, Clock, Star, Train, Info } from "lucide-react";
 
 const PLACES_DATA = [
@@ -123,7 +124,7 @@ const PLACES_DATA = [
   { id: "m8", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Matcha", name: "清水一芳園/泡沫冰", rating: null, transport: "", description: "抹茶" },
   { id: "m9", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Matcha", name: "Jouvencelle/巧克力鍋", rating: null, transport: "", description: "抹茶" },
   { id: "m10", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Matcha", name: "祇園小石/黑糖聖代", rating: null, transport: "", description: "抹茶" },
-  // Wagashi
+  // A11 Sweets - Wagashi
   { id: "sw1", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Wagashi", name: "出町双葉", rating: null, transport: "", description: "和菓子" },
   { id: "sw1-2", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Wagashi", name: "鍵善良房", rating: null, transport: "", description: "和菓子" },
   { id: "sw1-3", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Wagashi", name: "鶴屋吉信", rating: null, transport: "", description: "和菓子" },
@@ -134,7 +135,7 @@ const PLACES_DATA = [
   { id: "w8", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Wagashi", name: "七條甘春堂/羊羹", rating: null, transport: "", description: "和菓子" },
   { id: "w9", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Wagashi", name: "老松/夏柑糖", rating: null, transport: "", description: "和菓子" },
   { id: "w10", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Wagashi", name: "然花抄院", rating: null, transport: "", description: "和菓子" },
-  // Strawberry
+  // A11 Sweets - Strawberry
   { id: "sw3", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Strawberry", name: "Maison de Frouge", rating: null, transport: "", description: "草莓" },
   { id: "s2", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Strawberry", name: "Fukunaga 901/草莓山", rating: null, transport: "", description: "草莓" },
   { id: "s3", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Strawberry", name: "無碍山房", rating: null, transport: "", description: "草莓" },
@@ -145,7 +146,7 @@ const PLACES_DATA = [
   { id: "s8", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Strawberry", name: "Cherie Maison", rating: null, transport: "", description: "草莓" },
   { id: "s9", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Strawberry", name: "Ito Kacho", rating: null, transport: "", description: "草莓" },
   { id: "s10", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Strawberry", name: "Liberty", rating: null, transport: "", description: "草莓" },
-  // IceCream
+  // A11 Sweets - IceCream
   { id: "sw4", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "IceCream", name: "Gion Kinana", rating: null, transport: "", description: "冰淇淋" },
   { id: "i2", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "IceCream", name: "Premarche", rating: null, transport: "", description: "冰淇淋" },
   { id: "i3", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "IceCream", name: "Sugitora", rating: null, transport: "", description: "冰淇淋" },
@@ -156,7 +157,7 @@ const PLACES_DATA = [
   { id: "i8", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "IceCream", name: "Bel Amer", rating: null, transport: "", description: "冰淇淋" },
   { id: "i9", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "IceCream", name: "Arashiyama Yoshimura", rating: null, transport: "", description: "冰淇淋" },
   { id: "i10", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "IceCream", name: "Tsujiri Soft", rating: null, transport: "", description: "冰淇淋" },
-  // Cake
+  // A11 Sweets - Cake
   { id: "sw5", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Cake", name: "grains de vanille", rating: null, transport: "", description: "蛋糕" },
   { id: "sw5-2", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Cake", name: "Malebranche", rating: null, transport: "", description: "蛋糕" },
   { id: "k3", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Cake", name: "Patisserie S", rating: null, transport: "", description: "蛋糕" },
@@ -167,7 +168,7 @@ const PLACES_DATA = [
   { id: "k8", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Cake", name: "Papa Jon's", rating: null, transport: "", description: "蛋糕" },
   { id: "k9", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Cake", name: "Chez La Mère", rating: null, transport: "", description: "蛋糕" },
   { id: "k10", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Cake", name: "Baikal", rating: null, transport: "", description: "蛋糕" },
-  // Fruit Sandwich
+  // A11 Sweets - Fruit Sandwich
   { id: "sw2", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "FruitSandwich", name: "Yaoiso", rating: null, transport: "", description: "水果三明治" },
   { id: "f2", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "FruitSandwich", name: "Cricket", rating: null, transport: "", description: "水果三明治" },
   { id: "f3", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "FruitSandwich", name: "Hosokawa", rating: null, transport: "", description: "水果三明治" },
@@ -178,7 +179,7 @@ const PLACES_DATA = [
   { id: "f8", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "FruitSandwich", name: "Inoda", rating: null, transport: "", description: "水果三明治" },
   { id: "f9", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "FruitSandwich", name: "Sentido", rating: null, transport: "", description: "水果三明治" },
   { id: "f10", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "FruitSandwich", name: "Weekend NY", rating: null, transport: "", description: "水果三明治" },
-  // Pudding
+  // A11 Sweets - Pudding
   { id: "sw6", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Pudding", name: "Cafe Zou", rating: null, transport: "", description: "布丁" },
   { id: "pu2", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Pudding", name: "Madrague", rating: null, transport: "", description: "布丁" },
   { id: "pu3", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Pudding", name: "Takagi Coffee", rating: null, transport: "", description: "布丁" },
@@ -189,7 +190,7 @@ const PLACES_DATA = [
   { id: "pu8", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Pudding", name: "Maeda Coffee", rating: null, transport: "", description: "布丁" },
   { id: "pu9", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Pudding", name: "Ogawa Coffee", rating: null, transport: "", description: "布丁" },
   { id: "pu10", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Pudding", name: "Unir", rating: null, transport: "", description: "布丁" },
-  // Dango
+  // A11 Sweets - Dango
   { id: "sw7", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Dango", name: "Kamo Mitarashi", rating: null, transport: "", description: "糰子" },
   { id: "da2", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Dango", name: "Umezono", rating: null, transport: "", description: "糰子" },
   { id: "da3", category: "A", subCategoryId: "11", subCategory: "Sweets", childCategory: "Dango", name: "Jumondo", rating: null, transport: "", description: "糰子" },
@@ -318,6 +319,7 @@ const PlaceCard = ({ place, rank }) => {
   const now = new Date();
   const hour = now.getHours();
   const isOpen = hour >= defaultHours.open && hour < defaultHours.close;
+
   return (
     <div className="bg-white shadow-sm rounded-xl p-4 flex flex-col gap-2 border border-slate-100">
       <div className="flex items-start justify-between">
@@ -480,3 +482,14 @@ const KyotoGuide = () => {
 };
 
 export default KyotoGuide;
+
+if (typeof document !== "undefined") {
+  const rootElement = document.getElementById("root") ?? (() => {
+    const el = document.createElement("div");
+    el.id = "root";
+    document.body.appendChild(el);
+    return el;
+  })();
+
+  createRoot(rootElement).render(<KyotoGuide />);
+}
